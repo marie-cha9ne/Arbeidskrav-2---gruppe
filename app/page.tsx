@@ -3,7 +3,7 @@ import styles from "./components/Main.module.css";
 import reactlogo from "./assets/react.svg";
 import Link from "next/link";
 
-export default function Main() {
+export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.aboveTheFold}>
