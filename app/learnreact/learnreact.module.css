@@ -1,0 +1,91 @@
+.main {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+  line-height: 1.5;
+}
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+background-color:white;
+
+}
+.headline > h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+.text {
+  width: 50%;
+  height: 100%;
+  padding: 0 auto;
+  text-align: center;
+  margin: 1rem auto;
+}
+.article {
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  
+}
+.article > section {
+  height: 100%;
+  width: 100%;
+}
+.aboutReact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+     color: whitesmoke;
+   background: #333;
+}
+.aboutReactList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   color: whitesmoke;
+   background: #333;
+}
+.prerequisites {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.whatYOuNeed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  font-size: 1rem;
+}
+.btn {
+  margin: 2rem auto;
+  border-radius: 8px;
+  padding: 1.6em 1.2em;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
