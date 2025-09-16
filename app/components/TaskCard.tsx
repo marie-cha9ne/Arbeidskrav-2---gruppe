@@ -14,7 +14,7 @@ export default function TaskCard({ tasks }: TaskCardProps) {
   }, [answers]);
 
   return (
-    <article>
+    <form>
       {tasks.map((task) => (
         <div key={task.id} className="radioButtonDiv">
           <h2>
@@ -62,6 +62,6 @@ export default function TaskCard({ tasks }: TaskCardProps) {
       ))}
       {/* Knapp som bør være en komponent etterhvert som vi blir enig */}
       <button>Send inn svar</button>
-    </article>
+    </form>
   );
 }
