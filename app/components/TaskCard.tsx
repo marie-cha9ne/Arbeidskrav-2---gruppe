@@ -2,14 +2,23 @@
 "use client";
 import "./TaskCard.css";
 import { type TaskCardProps } from "../tasks/page";
+import { useAnswerStore } from "../store/useAnswerStore";
+import { useEffect } from "react";
 
 export default function TaskCard({ tasks }: TaskCardProps) {
+  const { answers, setAnswer } = useAnswerStore();
+
+  //Logger de lagrede svarene fra Zustand-store
+  useEffect(() => {
+    console.log("Lagrede svar:", answers);
+  }, [answers]);
+
   return (
     <article>
       {tasks.map((task) => (
-        <div key={task.index} className="radioButtonDiv">
+        <div key={task.id} className="radioButtonDiv">
           <h2>
-            {task.index}: {task.question}
+            {task.id}: {task.question}
           </h2>
           <div className="radioButtonDiv">
             <label>
@@ -18,9 +27,8 @@ export default function TaskCard({ tasks }: TaskCardProps) {
                 name={task.question}
                 value="option1"
                 onChange={() => {
-                  console.log(
-                    `Oppgave ${task.index}: Bruker valgte alternativ 1`
-                  );
+                  console.log(`Oppgave ${task.id}: Bruker valgte alternativ 1`);
+                  setAnswer(task.id, task.option1);
                 }}
               />
               {task.option1}
@@ -31,9 +39,8 @@ export default function TaskCard({ tasks }: TaskCardProps) {
                 name={task.question}
                 value="option2"
                 onChange={() => {
-                  console.log(
-                    `Oppgave ${task.index}: Bruker valgte alternativ 2`
-                  );
+                  console.log(`Oppgave ${task.id}: Bruker valgte alternativ 2`);
+                  setAnswer(task.id, task.option2);
                 }}
               />
               {task.option2}
@@ -44,9 +51,8 @@ export default function TaskCard({ tasks }: TaskCardProps) {
                 name={task.question}
                 value="option3"
                 onChange={() => {
-                  console.log(
-                    `Oppgave ${task.index}: Bruker valgte alternativ 3`
-                  );
+                  console.log(`Oppgave ${task.id}: Bruker valgte alternativ 3`);
+                  setAnswer(task.id, task.option3);
                 }}
               />
               {task.option3}

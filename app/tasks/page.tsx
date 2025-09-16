@@ -6,7 +6,7 @@
 import TaskCard from "../components/TaskCard";
 
 type MultipleChoice = {
-  index: number;
+  id: number;
   question: string;
   option1: string;
   option2: string;
@@ -21,14 +21,14 @@ export type TaskCardProps = {
 export default function TasksPage() {
   const Tasks: MultipleChoice[] = [
     {
-      index: 1,
+      id: 1,
       question: "Hva er de fem ulike “Design Thinking”-metodene?",
       option1: "Empati, definere, idéer, prototype, teste",
       option2: "Definere, empati, idéer, designe, teste",
       option3: "Snakke, tenke, dele, tegne, løse",
     },
     {
-      index: 2,
+      id: 2,
       question:
         "Hva kalles teksten man legger på bilde-elementer i HTML for at brukere skal få med seg hva bildet er om de ikke kan se det?",
       option1: "Bildetekst",
