@@ -19,7 +19,7 @@ export default function Home() {
               .
             </p>
           </div>
-          <div className={styles.learn}> 
+          <div className={styles.learn}>
             <p>Her kan du lese om blant annet:</p>
             <ul>
               <li>Designprinsipper</li>
@@ -32,28 +32,27 @@ export default function Home() {
             <p>
               <strong>
                 Når du føler deg trygg på teknikkene, utfordrer vi deg til 10
-                oppgaver. <br /> Om du består disse, har du bestått testen og kan kalle
-                deg for en Wizard of the Web. reagerer{" "}
+                oppgaver. <br /> Om du består disse, har du bestått testen og
+                kan kalle deg for en Wizard of the Web. reagerer{" "}
               </strong>
             </p>
           </div>
-           <button className={styles.callToActionTeaser} type="button">
-          Kom i gang!
-        </button>
+          <button className={styles.callToActionTeaser} type="button">
+            Kom i gang!
+          </button>
         </div>
-       
       </div>
 
-      
       <div className={styles.underTheFold}>
         <div className={styles.reactunderThefold}>
-          <FaReact  className={styles.fa}/>
+          <FaReact className={styles.fa} />
           <p className={styles.underThefoldHeadline}>React</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos autem
-            alias fugiat consectetur dolorem saepe ipsum eligendi enim aliquam,
-            reiciendis sed dicta. In ipsa eaque quam, temporibus sapiente error
-            sint.
+            React er et kraftig rammeverk for å bygge interaktive
+            brukergrensesnitt som gjør koden mer strukturert og gjenbrukbar. Med
+            React kan du enkelt lage dynamiske apper som oppdateres raskt når
+            data endrer seg. Det gir deg friheten til å bygge alt fra små
+            komponenter til store, komplekse løsninger.
           </p>
           <Link className={styles.callToAction} href="/subject/sub-react">
             {" "}
@@ -61,13 +60,13 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.JavaScriptunderTheFold}>
-           <SiJavascript className={styles.fa}/>
+          <SiJavascript className={styles.fa} />
           <p className={styles.underThefoldHeadline}>Javascript</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos autem
-            alias fugiat consectetur dolorem saepe ipsum eligendi enim aliquam,
-            reiciendis sed dicta. In ipsa eaque quam, temporibus sapiente error
-            sint.
+            JavaScript er språket som gjør nettsider levende, ved å gi dem
+            interaktivitet og logikk. Det brukes overalt – fra små animasjoner
+            til hele webapplikasjoner. Med JavaScript kan du gå fra statiske
+            sider til engasjerende og funksjonelle opplevelser.
           </p>
           <Link className={styles.callToAction} href="/subject/sub-js">
             {" "}
@@ -75,13 +74,13 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.cssunderThefold}>
-          <FaCss3Alt className={styles.fa}/>
+          <FaCss3Alt className={styles.fa} />
           <p className={styles.underThefoldHeadline}>CSS</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos autem
-            alias fugiat consectetur dolorem saepe ipsum eligendi enim aliquam,
-            reiciendis sed dicta. In ipsa eaque quam, temporibus sapiente error
-            sint.
+            CSS er verktøyet som forvandler en enkel nettside til et visuelt
+            design du får lyst til å utforske. Med det kan du styre alt fra
+            farger, fonter og layout til avanserte animasjoner. CSS gir
+            kreativiteten din frie tøyler til å forme unike uttrykk på nettet.
           </p>
           <p className={styles.cssLogo}></p>
           <Link className={styles.callToAction} href="/subject/sub-css">
