@@ -19,6 +19,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  z-index: -1;
 }
 .textbox {
   box-shadow: rgb(255, 255, 255) 0px 5px 15px;
