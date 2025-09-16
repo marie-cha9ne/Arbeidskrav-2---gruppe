@@ -1,17 +1,27 @@
 .footer{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    background-color: #333;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #000000;
     border: 1px solid black;
+    padding: 1em 0;
 }
+
 .footerSection{
-     border: 1px solid white;
      color: whitesmoke;
      display: flex;
-     flex-direction: column;
-     justify-content: top;
-     align-items: center;
-     min-height: 20vh;
-     
+     justify-content: space-evenly;
+}
+.fa{
+    width: 50px;
+    height: 50px;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+     color: whitesmoke;
+     gap: 1em;
+     font-size: 1em;
+     margin-top: 3em;
+     text-decoration: underline;
 }

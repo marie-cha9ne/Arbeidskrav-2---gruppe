@@ -84,10 +84,11 @@
   padding: 0;
   text-align: center;
   width: 100vw;
+  
 }
 
 .underTheFold > div {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,10 +161,12 @@
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.logoReact {
-  width: 250px;
-  height: auto;
-  margin: 1rem auto;
+
+
+.fa{
+  margin: 0 auto;
+    width: 100px;
+    height: 100px;
 }
 
 @media screen and (max-width: 750px) {

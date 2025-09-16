@@ -1,8 +1,10 @@
 import styles from "./components/Main.module.css";
-import reactlogo from "../public/react.svg";
 import galaxy from "../public/galaxy.jpg";
 import Link from "next/link";
 import Image from "next/image";
+import { FaReact } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { FaCss3Alt } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -41,15 +43,11 @@ export default function Home() {
         </div>
        
       </div>
+
+      
       <div className={styles.underTheFold}>
         <div className={styles.reactunderThefold}>
-          <Image
-            className={styles.reactlogo}
-            src={reactlogo}
-            alt="React logo"
-            width={100}
-            height={100}
-          />
+          <FaReact  className={styles.fa}/>
           <p className={styles.underThefoldHeadline}>React</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos autem
@@ -63,6 +61,7 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.JavaScriptunderTheFold}>
+           <SiJavascript className={styles.fa}/>
           <p className={styles.underThefoldHeadline}>Javascript</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos autem
@@ -76,6 +75,7 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.cssunderThefold}>
+          <FaCss3Alt className={styles.fa}/>
           <p className={styles.underThefoldHeadline}>CSS</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos autem
