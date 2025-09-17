@@ -1,7 +1,5 @@
 import styles from "./components/Main.module.css";
-import galaxy from "../public/galaxy.jpg";
 import Link from "next/link";
-import Image from "next/image";
 import { FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa";
