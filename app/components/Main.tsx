@@ -4,45 +4,38 @@ import { FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa";
 
-const Main: React.FC = () =>{
-return(
-      <main className={styles.main}>
+const Main: React.FC = () => {
+  return (
+    <main className={styles.main}>
       <div className={styles.teaser}>
         <div className={styles.textbox}>
-          <h1>Velkommen til The Wizards of the Web! </h1>
           <div className={styles.introtext}>
+            <h1>T W W</h1>
             <p>
               Gjør som tusenvis av andre webutvikling-interesserte: Lær
               spennenende teknikker, ta kurset og bli en ekte Web-Wizard du og!
               .
             </p>
-          </div>
-          <div className={styles.learn}>
-            <p>Her kan du lese om blant annet:</p>
-            <ul>
-              <li>Designprinsipper</li>
-              <li>Javascript</li>
-              <li>React</li>
-            </ul>
+           
           </div>
 
-          <div className={styles.test}>
-            <p>
-              <strong>
-                Når du føler deg trygg på teknikkene, utfordrer vi deg til 10
-                oppgaver. <br /> Om du består disse, har du bestått testen og
-                kan kalle deg for en Wizard of the Web. reagerer{" "}
-              </strong>
-            </p>
+          <div className={styles.learnAbout}>
+            <h3>Her kan du lese om blant annet:</h3>
+
+            <div>
+              <p>Designprinsipper</p>
+              <p>Javascript</p>
+              <p>React</p>
+            </div>
+             <button className={styles.callToActionTeaser} type="button">
+              Kom i gang!
+            </button>
           </div>
-          <button className={styles.callToActionTeaser} type="button">
-            Kom i gang!
-          </button>
         </div>
       </div>
 
       <div className={styles.underTheFold}>
-        <div className={styles.reactunderThefold}>
+        <div className={`${styles.reactunderThefold} ${styles.paragraf}`}>
           <FaReact className={styles.fa} />
           <p className={styles.underThefoldHeadline}>React</p>
           <p>
@@ -57,7 +50,7 @@ return(
             Lær React
           </Link>
         </div>
-        <div className={styles.JavaScriptunderTheFold}>
+        <div className={`${styles.JavaScriptunderTheFold} ${styles.paragraf}`}>
           <SiJavascript className={styles.fa} />
           <p className={styles.underThefoldHeadline}>Javascript</p>
           <p>
@@ -71,7 +64,7 @@ return(
             Lær Javascript
           </Link>
         </div>
-        <div className={styles.cssunderThefold}>
+        <div className={`${styles.cssunderThefold} ${styles.paragraf}`}>
           <FaCss3Alt className={styles.fa} />
           <p className={styles.underThefoldHeadline}>CSS</p>
           <p>
@@ -88,7 +81,7 @@ return(
         </div>
       </div>
     </main>
-)
-}
+  );
+};
 
 export default Main;
