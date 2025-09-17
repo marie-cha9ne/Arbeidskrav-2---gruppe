@@ -1,7 +1,8 @@
 export default function subjectCss(){
   return(
     <article>
-      <h2>Faginnhold design prinsipper</h2>
+      <h2>Design</h2>
+      
     </article>
   )
 }
