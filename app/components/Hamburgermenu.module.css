@@ -69,3 +69,12 @@
 .btnClosed {
   display: none;
 }
+
+
+/* scroll */
+.light{
+  color: white;
+}
+.dark{
+  color: black;
+}
