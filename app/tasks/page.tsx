@@ -1,5 +1,5 @@
 //Hovedside for oppgaver: Alle oppgavene vises på denne siden
-//Hver oppgave har en type: TaskType
+//Hver oppgave har en type: MultipleChoice
 //Tar inn komponenter: TaskCard
 //Tar etterhvert inn en button og som sender inn svarene og redirecter til resultatside
 
