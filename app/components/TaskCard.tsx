@@ -5,6 +5,7 @@ import { type TaskCardProps } from "../tasks/page";
 import { useAnswerStore } from "../store/useAnswerStore";
 import { useEffect } from "react";
 
+
 export default function TaskCard({ tasks }: TaskCardProps) {
   const { answers, setAnswer } = useAnswerStore();
 
@@ -14,54 +15,54 @@ export default function TaskCard({ tasks }: TaskCardProps) {
   }, [answers]);
 
   return (
-    <form>
-      {tasks.map((task) => (
-        <div key={task.id} className="radioButtonDiv">
-          <h2>
-            {task.id}: {task.question}
-          </h2>
-          <div className="radioButtonDiv">
-            <label>
-              <input
-                type="radio"
-                name={task.question}
-                value="option1"
-                onChange={() => {
-                  console.log(`Oppgave ${task.id}: Bruker valgte alternativ 1`);
-                  setAnswer(task.id, task.option1);
-                }}
-              />
-              {task.option1}
-            </label>
-            <label>
-              <input
-                type="radio"
-                name={task.question}
-                value="option2"
-                onChange={() => {
-                  console.log(`Oppgave ${task.id}: Bruker valgte alternativ 2`);
-                  setAnswer(task.id, task.option2);
-                }}
-              />
-              {task.option2}
-            </label>
-            <label>
-              <input
-                type="radio"
-                name={task.question}
-                value="option3"
-                onChange={() => {
-                  console.log(`Oppgave ${task.id}: Bruker valgte alternativ 3`);
-                  setAnswer(task.id, task.option3);
-                }}
-              />
-              {task.option3}
-            </label>
+    <article>
+      {tasks.map((task) => {
+        const selected = answers.find(
+          (answer) => answer.taskId === task.id
+        )?.selectedOption;
+
+        return (
+          <div key={task.id} className="radioButtonDiv">
+            <h2>
+              {task.id}: {task.question}
+            </h2>
+            {task.image && <img src={task.image}></img>}
+            <div className="radioButtonDiv">
+              <label>
+                <input
+                  type="radio"
+                  name={`task-${task.id}`}
+                  value="option1"
+                  checked={selected === "option1"}
+                  onChange={() => setAnswer(task.id, "option1")}
+                />
+                {task.option1}
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name={`task-${task.id}`}
+                  value="option2"
+                  checked={selected === "option2"}
+                  onChange={() => setAnswer(task.id, "option2")}
+                />
+                {task.option2}
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name={`task-${task.id}`}
+                  value="option3"
+                  checked={selected === "option3"}
+                  onChange={() => setAnswer(task.id, "option3")}
+                />
+                {task.option3}
+              </label>
+            </div>
           </div>
-        </div>
-      ))}
-      {/* Knapp som bør være en komponent etterhvert som vi blir enig */}
+        );
+      })}
       <button>Send inn svar</button>
-    </form>
+    </article>
   );
 }
