@@ -1,7 +1,7 @@
 //Rendrer cards for hvert spørsmål med multiple choice format.
 "use client";
 import "./TaskCard.css";
-import { type TaskCardProps } from "../tasks/page";
+import { type TaskCardProps } from "../data/types";
 import { useAnswerStore } from "../store/useAnswerStore";
 import { useEffect } from "react";
 

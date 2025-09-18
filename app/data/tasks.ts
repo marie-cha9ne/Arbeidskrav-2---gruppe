@@ -1,11 +1,4 @@
-export type MultipleChoice = {
-  id: number;
-  question: string;
-  option1: string;
-  option2: string;
-  option3: string;
-  image?: string;
-};
+import { MultipleChoice } from "./types";
 
 export const Tasks: MultipleChoice[] = [
   {

@@ -1,11 +1,7 @@
 //Her lagres svarene til brukeren
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-
-type Answer = {
-  taskId: number;
-  selectedOption: string;
-};
+import { Answer } from "../data/types";
 
 type AnswersState = {
   answers: Answer[];

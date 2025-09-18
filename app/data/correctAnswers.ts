@@ -1,4 +1,6 @@
-export const correctAnswers = [
+import { Answer } from "./types";
+
+export const correctAnswers: Answer[] = [
   { taskId: 1, selectedOption: "option1" },
   { taskId: 2, selectedOption: "option2" },
   { taskId: 3, selectedOption: "option1" },
