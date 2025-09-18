@@ -26,7 +26,7 @@ export const Tasks: MultipleChoice[] = [
   {
     id: 3,
     question: "Hva blir logget ut her?",
-    option1: `["Eple", "Appelsin", "Pære", "Mango", "Bolle", "Kake", "Vaffel", "Croissant", "Doughnut"]`,
+    option1: `["Juice", "Smoothie", "Redbull", "Kaffe", "Eple", "Appelsin", "Pære", "Mango"]`,
     option2: `["Juice", "Smoothie", "Redbull", "Kaffe"]`,
     option3: `["Eple", "Appelsin", "Pære", "Mango", "Juice", "Smoothie", "Redbull", "Kaffe"]`,
     image: "/JavaScript-oppgaver/oppg1.png",
@@ -42,9 +42,9 @@ export const Tasks: MultipleChoice[] = [
   {
     id: 5,
     question: "Hva blir logget ut her?",
-    option1: `Log1: Gratulerer Allen du er gammel nok til å ta deg en drink. Log2: Allen! Du kan jo også kjøre!`,
-    option2: `Log1: Gratulerer Violet du er gammel nok til å ta deg en drink. Log2: Sorry Violet, men du kan ikke kjøre..`,
-    option3: `Gratulerer Stella du er gammel nok til å ta deg en drink. Log2: Sorry Stella, men du kan ikke kjøre..`,
+    option1: `Log 1: Gratulerer Allen du er gammel nok til å ta deg en drink. Log 2: Allen! Du kan jo også kjøre!`,
+    option2: `Log 1: Gratulerer Stella du er gammel nok til å ta deg en drink. Log 2: Stella! Du kan jo også kjøre!`,
+    option3: `Log 1: Gratulerer Stella du er gammel nok til å ta deg en drink. Log 2: Sorry Stella, men du kan ikke kjøre..`,
     image: "/JavaScript-oppgaver/oppg3.png",
   },
   {

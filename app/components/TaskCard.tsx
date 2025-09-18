@@ -5,7 +5,6 @@ import { type TaskCardProps } from "../tasks/page";
 import { useAnswerStore } from "../store/useAnswerStore";
 import { useEffect } from "react";
 
-
 export default function TaskCard({ tasks }: TaskCardProps) {
   const { answers, setAnswer } = useAnswerStore();
 
@@ -62,7 +61,6 @@ export default function TaskCard({ tasks }: TaskCardProps) {
           </div>
         );
       })}
-      <button>Send inn svar</button>
     </article>
   );
 }
