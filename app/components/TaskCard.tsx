@@ -45,7 +45,7 @@ const isCorrect = selected === task.correct;
             <h2>
               {task.id}: {task.question}
             </h2>
-            {task.image && <img src={task.image}></img>}
+            {task.image && <img src={task.image} alt=""></img>}
             <div className="radioButtonDiv">
               <label>
                 <input
