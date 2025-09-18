@@ -1,19 +1,22 @@
-//Tar inn komponenter: TaskCard
-//Tar etterhvert inn en button og som sender inn svarene og redirecter til resultatside
+"use client";
 
-import TaskCard from "../components/TaskCard";
+import { useState } from "react";
 import { Tasks } from "../data/tasks";
-import type { TaskCardProps } from "../data/types";
+import { useAnswerStore } from "../store/useAnswerStore";
+import TaskCard from "../components/TaskCard";
 import SubmitButton from "../components/SubmitButton";
-
-//Definerer props-typen for komponenten TypeCard
+import Results from "../components/Results";
 
 export default function TasksPage() {
+  const [submitted, setSubmitted] = useState(false);
+  const userAnswers = useAnswerStore((state) => state.answers);
+
   return (
     <main>
       <h1>Oppgaver</h1>
-      <TaskCard tasks={Tasks}></TaskCard>
-      <SubmitButton />
+      <TaskCard tasks={Tasks} />
+      <SubmitButton onSubmit={() => setSubmitted(true)} />
+      {submitted && <Results userAnswers={userAnswers} />}
     </main>
   );
 }

@@ -25,39 +25,18 @@ export default function TaskCard({ tasks }: TaskCardProps) {
             <h2>
               {task.id}: {task.question}
             </h2>
-            {task.image && <img src={task.image}></img>}
-            <div className="radioButtonDiv">
-              <label>
+            {task.options.map((optionText, optionIndex) => (
+              <label key={optionIndex}>
                 <input
                   type="radio"
-                  name={`task-${task.id}`}
-                  value="option1"
-                  checked={selected === "option1"}
-                  onChange={() => setAnswer(task.id, "option1")}
+                  name={task.id.toString()}
+                  value={optionText}
+                  checked={selected === optionText}
+                  onChange={() => setAnswer(task.id, optionText)}
                 />
-                {task.option1}
+                {optionText}
               </label>
-              <label>
-                <input
-                  type="radio"
-                  name={`task-${task.id}`}
-                  value="option2"
-                  checked={selected === "option2"}
-                  onChange={() => setAnswer(task.id, "option2")}
-                />
-                {task.option2}
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name={`task-${task.id}`}
-                  value="option3"
-                  checked={selected === "option3"}
-                  onChange={() => setAnswer(task.id, "option3")}
-                />
-                {task.option3}
-              </label>
-            </div>
+            ))}
           </div>
         );
       })}

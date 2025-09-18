@@ -1,16 +1,24 @@
-import { Answer } from "../data/types";
+import { Answer, MultipleChoice, Result } from "../data/types";
 
-//Tar inn svarene til brukeren og fasiten
-export function calculateScore(userAnswers: Answer[],
-  correctAnswers: Answer[]) {
+//Tar inn oppgavene, svarene til brukeren og fasiten
+export function calculateScore(
+  userAnswers: Answer[],
+  tasks: MultipleChoice[]
+): { score: number; results: Result[] } {
 
-  const results = correctAnswers.map((correct) => {
+  const results: Result[] = tasks.map((task) => {
     const userAnswer = userAnswers.find(
-      (answer) => answer.taskId === correct.taskId
+      (answer) => answer.taskId === task.id
     );
+
+const correctOptionText = task.options[task.correctOptionIndex]
+
     return {
-      taskId: correct.taskId,
-      correct: userAnswer?.selectedOption === correct.selectedOption,
+      taskId: task.id,
+      question: task.question,
+      userSelected: userAnswer?.selectedOption ?? null,
+      correctOption: correctOptionText,
+      correct: userAnswer?.selectedOption === correctOptionText,
     };
   });
 

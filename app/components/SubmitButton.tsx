@@ -1,20 +1,14 @@
 "use client";
 
 import { useAnswerStore } from "../store/useAnswerStore";
-import { calculateScore } from "../utils/calculateScore";
-import { correctAnswers } from "../data/correctAnswers";
+import { SubmiButtonProps } from "../data/types";
 
-export default function SubmitButton() {
-  //Henter kun ut svarene til brukeren med å selektere for å slippe re-rendring av hele storen
-  const answers = useAnswerStore((selected) => selected.answers);
+export default function SubmitButton({ onSubmit }: SubmiButtonProps) {
+  //Henter kun ut svarene til brukeren for å slippe re-rendring av hele storen
+  const answers = useAnswerStore((state) => state.answers);
 
   function handleClick() {
-    const { score, results } = calculateScore(answers, correctAnswers);
-    console.log(
-      `${score} av ${correctAnswers.length} poeng. Resultat: ${JSON.stringify(
-        results
-      )}`
-    );
+    onSubmit();
   }
 
   return <button onClick={handleClick}>Send inn svar</button>;
