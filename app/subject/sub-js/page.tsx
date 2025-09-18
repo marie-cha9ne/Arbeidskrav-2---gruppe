@@ -74,7 +74,7 @@ export default function subjectJs() {
         <Example code={`const shoppingList = ["melk", "brød", "ost"];`} />
         <p>
           Når noe i javascript skal telles starter tellingen alltid på 0 så i
-          eksempelet over er rekkefølgen på listen:{" "}
+          eksempelet over er rekkefølgen på listen:
         </p>
         <ul>
           <li>Første element [0] er "melk"</li>
@@ -116,7 +116,7 @@ export default function subjectJs() {
         <h4>filter()</h4>
         <p>
           Med <strong>filter</strong> kan vi lage et nytt array som bare
-          inneholder elementer som oppfyller en bestemt betingelse.{" "}
+          inneholder elementer som oppfyller en bestemt betingelse.
           <strong>Eksempel:</strong>
         </p>
         <Example
