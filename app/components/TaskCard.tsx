@@ -5,10 +5,10 @@ import { type TaskCardProps } from "../tasks/page";
 import { useAnswerStore } from "../store/useAnswerStore";
 import { useEffect, useState } from "react";
 
-
 export default function TaskCard({ tasks }: TaskCardProps) {
   const { answers, setAnswer } = useAnswerStore();
-   const [submitted, setsubmitted] = useState<boolean>(false);
+
+  const [submitted, setsubmitted] = useState<boolean>(false);
 
   //Logger de lagrede svarene fra Zustand-store
   useEffect(() => {
@@ -16,20 +16,20 @@ export default function TaskCard({ tasks }: TaskCardProps) {
   }, [answers]);
 
   //Sjekker resultatene
-  
-  function handelSubmit(): void{
+
+  function handelSubmit(): void {
     let score = 0;
 
-    setsubmitted(true)
+    setsubmitted(true);
 
-    tasks.forEach((task)=>{
-    const userAnswer = answers.find((answer) => answer.taskId === task.id);
-    if(userAnswer?.selectedOption === task.correct){
-      score++;
-    }
-  })
- 
-   alert(`Du fikk ${score} av ${tasks.length} riktig`)
+    tasks.forEach((task) => {
+      const userAnswer = answers.find((answer) => answer.taskId === task.id);
+      if (userAnswer?.selectedOption === task.correct) { //hvis userAnswer finnes,  hent selecetedOption
+        score++;
+      }
+    });
+
+    alert(`Du fikk ${score} av ${tasks.length} riktig`);
   }
 
   return (
@@ -38,9 +38,8 @@ export default function TaskCard({ tasks }: TaskCardProps) {
         const selected = answers.find(
           (answer) => answer.taskId === task.id
         )?.selectedOption;
-const isCorrect = selected === task.correct;
+        const isCorrect = selected === task.correct; // sjekker om selected er det samme som task sin correct
         return (
-         
           <div key={task.id} className="radioButtonDiv">
             <h2>
               {task.id}: {task.question}
@@ -55,7 +54,7 @@ const isCorrect = selected === task.correct;
                   checked={selected === "option1"}
                   onChange={() => setAnswer(task.id, "option1")}
                 />
-               
+
                 {task.option1}
               </label>
               <label>
@@ -79,20 +78,23 @@ const isCorrect = selected === task.correct;
                 {task.option3}
               </label>
             </div>
-             {submitted && (
-                  <p style ={{
-                    color: isCorrect ? "green" : "red",
-                    fontWeight: "bold",
-                  }}
-                  >
-                    {isCorrect ? "Riktig" : "Feil"}
-                  </p>
-                )}
+            {/* Viser resultatne i hver radiobox */}
+            {submitted && (
+              <p
+                style={{
+                  color: isCorrect ? "green" : "red",
+                  fontWeight: "bold",
+                }}
+              >
+                {isCorrect ? "Riktig" : "Feil"}
+              </p>
+            )}
           </div>
-      
         );
       })}
-      <button type="button" onClick={handelSubmit}>Send inn svar</button>
+      <button type="button" onClick={handelSubmit}>
+        Send inn svar
+      </button>
     </article>
   );
 }
