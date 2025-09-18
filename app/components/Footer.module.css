@@ -1,0 +1,53 @@
+.footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #000000;
+    border: 1px solid black;
+    padding: 1em 0;
+}
+
+.footerSection{
+     color: whitesmoke;
+     display: flex;
+     justify-content: space-evenly;
+
+}
+.fa{
+    display: flex;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+}
+
+.fa:hover{
+     width: 55px;
+    height: 55px;
+}
+.react:hover{
+    color: aqua;
+}
+.js:hover{
+    color: yellow;
+}
+.css:hover{
+    color: rgb(27, 27, 203);
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+     color: whitesmoke;
+     gap: 1em;
+     font-size: 1em;
+     margin-top: 3em;
+     text-decoration: underline;
+}
+.contact >p:hover{
+    font-size: 1.7rem;
+}
+.up:hover{
+    padding: 0;
+    margin: 0;
+width: 1.5rem;
+height: 1.8rem;
+}
