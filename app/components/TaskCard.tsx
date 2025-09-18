@@ -3,16 +3,34 @@
 import "./TaskCard.css";
 import { type TaskCardProps } from "../tasks/page";
 import { useAnswerStore } from "../store/useAnswerStore";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 
 export default function TaskCard({ tasks }: TaskCardProps) {
   const { answers, setAnswer } = useAnswerStore();
+   const [submitted, setsubmitted] = useState<boolean>(false);
 
   //Logger de lagrede svarene fra Zustand-store
   useEffect(() => {
     console.log("Lagrede svar:", answers);
   }, [answers]);
+
+  //Sjekker resultatene
+  
+  function handelSubmit(): void{
+    let score = 0;
+
+    setsubmitted(true)
+
+    tasks.forEach((task)=>{
+    const userAnswer = answers.find((answer) => answer.taskId === task.id);
+    if(userAnswer?.selectedOption === task.correct){
+      score++;
+    }
+  })
+ 
+   alert(`Du fikk ${score} av ${tasks.length} riktig`)
+  }
 
   return (
     <article>
@@ -20,8 +38,9 @@ export default function TaskCard({ tasks }: TaskCardProps) {
         const selected = answers.find(
           (answer) => answer.taskId === task.id
         )?.selectedOption;
-
+const isCorrect = selected === task.correct;
         return (
+         
           <div key={task.id} className="radioButtonDiv">
             <h2>
               {task.id}: {task.question}
@@ -36,6 +55,7 @@ export default function TaskCard({ tasks }: TaskCardProps) {
                   checked={selected === "option1"}
                   onChange={() => setAnswer(task.id, "option1")}
                 />
+               
                 {task.option1}
               </label>
               <label>
@@ -59,10 +79,20 @@ export default function TaskCard({ tasks }: TaskCardProps) {
                 {task.option3}
               </label>
             </div>
+             {submitted && (
+                  <p style ={{
+                    color: isCorrect ? "green" : "red",
+                    fontWeight: "bold",
+                  }}
+                  >
+                    {isCorrect ? "Riktig" : "Feil"}
+                  </p>
+                )}
           </div>
+      
         );
       })}
-      <button>Send inn svar</button>
+      <button type="button" onClick={handelSubmit}>Send inn svar</button>
     </article>
   );
 }
