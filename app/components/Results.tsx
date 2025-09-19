@@ -6,7 +6,6 @@ import "./Results.css";
 export default function Results({ userAnswers }: ResultsProps) {
   const finalResult = calculateScore(userAnswers, Tasks);
   const score = finalResult.score;
-  const results = finalResult.results;
 
   return (
     <article>

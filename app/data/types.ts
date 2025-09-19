@@ -8,11 +8,14 @@ export type MultipleChoice = {
   question: string;
   options: string[];
   image?: string;
-  correctOptionIndex: number;
+  imageWidth?: number;
+  imageHeight?: number;
+  correctIndex: number;
 };
 
 export type TaskCardProps = {
   tasks: MultipleChoice[];
+  submitted: boolean;
 };
 
 export type Result = {

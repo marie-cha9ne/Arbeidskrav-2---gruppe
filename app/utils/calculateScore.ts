@@ -4,14 +4,11 @@ import { Answer, MultipleChoice, Result } from "../data/types";
 export function calculateScore(
   userAnswers: Answer[],
   tasks: MultipleChoice[]
-): { score: number; results: Result[] } {
-
+): { score: number } {
   const results: Result[] = tasks.map((task) => {
-    const userAnswer = userAnswers.find(
-      (answer) => answer.taskId === task.id
-    );
+    const userAnswer = userAnswers.find((answer) => answer.taskId === task.id);
 
-const correctOptionText = task.options[task.correctOptionIndex]
+    const correctOptionText = task.options[task.correctIndex];
 
     return {
       taskId: task.id,
@@ -23,5 +20,5 @@ const correctOptionText = task.options[task.correctOptionIndex]
   });
 
   const score = results.filter((result) => result.correct).length;
-  return { score, results };
+  return { score };
 }

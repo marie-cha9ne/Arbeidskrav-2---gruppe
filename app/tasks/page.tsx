@@ -14,7 +14,7 @@ export default function TasksPage() {
   return (
     <main>
       <h1>Oppgaver</h1>
-      <TaskCard tasks={Tasks} />
+      <TaskCard tasks={Tasks} submitted={submitted} />
       <SubmitButton onSubmit={() => setSubmitted(true)} />
       {submitted && <Results userAnswers={userAnswers} />}
     </main>

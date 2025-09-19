@@ -66,17 +66,17 @@ const Main: React.FC = () => {
         </div>
         <div className={`${styles.cssunderThefold} ${styles.paragraf}`}>
           <FaCss3Alt className={styles.fa} />
-          <p className={styles.underThefoldHeadline}>CSS</p>
+          <p className={styles.underThefoldHeadline}>Design</p>
           <p>
-            CSS er verktøyet som forvandler en enkel nettside til et visuelt
-            design du får lyst til å utforske. Med det kan du styre alt fra
-            farger, fonter og layout til avanserte animasjoner. CSS gir
-            kreativiteten din frie tøyler til å forme unike uttrykk på nettet.
+            UI/UX-design handelr om hvordan en nettside ser ut (UI) og hvordan det oppleves for brukeren å interagere med den.
+            <br />Et godt design gjør at brukeren finner fram enkelt, får en behagelig opplevelse og stoler på innholdet. 
+            Har du hvert innom en netttside, der ting er vanskelig å finne frem til?
+            Lær deg design, gjør nette en bedre opplevelse for alle.
           </p>
           <p className={styles.cssLogo}></p>
           <Link className={styles.callToAction} href="/subject/sub-css">
             {" "}
-            Lær CSS
+            Lær Design
           </Link>
         </div>
       </div>
