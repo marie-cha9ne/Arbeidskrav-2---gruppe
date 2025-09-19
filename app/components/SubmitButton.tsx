@@ -1,5 +1,5 @@
 "use client";
-
+// import "../components/Main.module.css"
 import { useAnswerStore } from "../store/useAnswerStore";
 import { SubmiButtonProps } from "../data/types";
 
@@ -11,5 +11,5 @@ export default function SubmitButton({ onSubmit }: SubmiButtonProps) {
     onSubmit();
   }
 
-  return <button onClick={handleClick}>Send inn svar</button>;
+  return <button onClick={handleClick} className="submit-button">Send inn svar</button>;
 }

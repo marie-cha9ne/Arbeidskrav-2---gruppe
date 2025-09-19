@@ -1,8 +1,9 @@
 "use client";
-
+import "./tasks.css";
 import { useState } from "react";
 import { Tasks } from "../data/tasks";
 import { useAnswerStore } from "../store/useAnswerStore";
+import TasksHeader from "../components/TasksHeader";
 import TaskCard from "../components/TaskCard";
 import SubmitButton from "../components/SubmitButton";
 import Results from "../components/Results";
@@ -12,8 +13,8 @@ export default function TasksPage() {
   const userAnswers = useAnswerStore((state) => state.answers);
 
   return (
-    <main>
-      <h1>Oppgaver</h1>
+    <main className="main-container">
+      <TasksHeader />
       <TaskCard tasks={Tasks} submitted={submitted} />
       <SubmitButton onSubmit={() => setSubmitted(true)} />
       {submitted && <Results userAnswers={userAnswers} />}
