@@ -49,14 +49,8 @@ const Hamburgermenu: React.FC = () => {
           <Link href="/">
             <li>Home</li>
           </Link>
-          <Link href="/subject/sub-react">
-            <li>React</li>
-          </Link>
-          <Link href="/subject/sub-js">
-            <li>Javascript</li>{" "}
-          </Link>
-          <Link href="/subject/sub-design">
-                <li>Design</li>{" "}
+          <Link href="/subject">
+            <li>Faginnhold</li>
           </Link>
           <Link href="/tasks">
             <li>Oppgaver</li>{" "}

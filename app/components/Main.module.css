@@ -11,7 +11,7 @@
   color: whitesmoke;
   width: 100vw;
   height: 100vh;
-  background-image: url("/galaxy.jpg");
+  background-image: url("/new-bg-image.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@
 }
 .textbox {
   box-shadow: rgb(255, 255, 255) 0px 5px 15px;
-  color: #fff82f;
+  color: #231942;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +50,7 @@
   align-content: center;
   text-align: center;
   font-size: 1.5rem;
-  color: #fff82f;
+  color: #231942;
 }
 .learnAbout {
   display: flex;
@@ -71,10 +71,11 @@
   margin: 1.5rem auto;
   border-radius: 20px;
   padding: 0.6em 2.2em;
-  width: 20em;
+  width: 10em;
   background-color:  #6a1f9f;
   cursor: pointer;
   color: #f5f0f9;
+  text-align: center;
 }
 .underTheFold {
   display: grid;

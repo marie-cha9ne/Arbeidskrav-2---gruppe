@@ -1,5 +1,5 @@
 import Example from "@/app/components/CodeExample";
-import type { ArticleSection } from "@/app/content/types";
+import type { ArticleSection } from "@/app/data/types";
 
 type Props = {
   content: ArticleSection[];
