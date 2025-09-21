@@ -15,7 +15,6 @@ const Main: React.FC = () => {
               spennenende teknikker, ta kurset og bli en ekte Web-Wizard du og!
               .
             </p>
-           
           </div>
 
           <div className={styles.learnAbout}>
@@ -26,7 +25,10 @@ const Main: React.FC = () => {
               <p>Javascript</p>
               <p>React</p>
             </div>
-            <Link  className={styles.callToActionTeaser} href='/subject'> Kom i gang</Link>
+            <Link className={styles.callToActionTeaser} href="/subject">
+              {" "}
+              Kom i gang
+            </Link>
           </div>
         </div>
       </div>
@@ -65,10 +67,13 @@ const Main: React.FC = () => {
           <IoAccessibility className={styles.fa} />
           <p className={styles.underThefoldHeadline}>Design</p>
           <p>
-            UI/UX-design handelr om hvordan en nettside ser ut (UI) og hvordan det oppleves for brukeren å interagere med den.
-            <br />Et godt design gjør at brukeren finner fram enkelt, får en behagelig opplevelse og stoler på innholdet. 
-            Har du hvert innom en netttside, der ting er vanskelig å finne frem til?
-            Lær deg design, gjør nette en bedre opplevelse for alle.
+            UI/UX-design handelr om hvordan en nettside ser ut (UI) og hvordan
+            det oppleves for brukeren å interagere med den.
+            <br />
+            Et godt design gjør at brukeren finner fram enkelt, får en behagelig
+            opplevelse og stoler på innholdet. Har du hvert innom en netttside,
+            der ting er vanskelig å finne frem til? Lær deg design, gjør nette
+            en bedre opplevelse for alle.
           </p>
           <p className={styles.cssLogo}></p>
           <Link className={styles.callToAction} href="/subject/sub-design">
