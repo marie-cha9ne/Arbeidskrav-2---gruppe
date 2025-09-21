@@ -7,7 +7,10 @@ import styles from './sub.module.css';
 export default function layout({children}: Readonly<{children: React.ReactNode}>){
   return (
     <section>
-      <h1 className={styles.headline}>Faglig innhold</h1>
+      <h1 className={styles.headline}>
+        <Link href="/subject">
+        Fagliginnhold</Link></h1>
+        
       {/* under navigasjons bar til de forskjellige emnene */}
       <nav className={styles.bar}>
         <Link href="/subject/sub-design">Design prinsipper</Link>
