@@ -74,7 +74,7 @@ const Main: React.FC = () => {
             Lær deg design, gjør nette en bedre opplevelse for alle.
           </p>
           <p className={styles.cssLogo}></p>
-          <Link className={styles.callToAction} href="/subject/sub-css">
+          <Link className={styles.callToAction} href="/subject/sub-design">
             {" "}
             Lær Design
           </Link>

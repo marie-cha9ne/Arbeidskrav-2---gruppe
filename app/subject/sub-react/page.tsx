@@ -1,7 +1,6 @@
+import ArticleRenderer from "@/app/components/ArticleRendrer";
+import { subReactContent } from "@/app/content/subReactContent";
+
 export default function subjectReact(){
-  return(
-    <article>
-      <h2>Faginnhold React</h2>
-    </article>
-  )
+  return <ArticleRenderer content={subReactContent} />
 }
