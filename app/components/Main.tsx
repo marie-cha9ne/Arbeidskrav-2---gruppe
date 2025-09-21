@@ -27,7 +27,7 @@ const Main: React.FC = () => {
             </div>
             <Link className={styles.callToActionTeaser} href="/subject">
               {" "}
-              Kom i gang
+              Kom igang
             </Link>
           </div>
         </div>
