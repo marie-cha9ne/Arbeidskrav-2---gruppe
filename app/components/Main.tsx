@@ -2,8 +2,7 @@ import styles from "./Main.module.css";
 import Link from "next/link";
 import { FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
-import { FaCss3Alt } from "react-icons/fa";
-
+import { IoAccessibility } from "react-icons/io5";
 const Main: React.FC = () => {
   return (
     <main className={styles.main}>
@@ -27,9 +26,7 @@ const Main: React.FC = () => {
               <p>Javascript</p>
               <p>React</p>
             </div>
-             <button className={styles.callToActionTeaser} type="button">
-              Kom i gang!
-            </button>
+            <Link  className={styles.callToActionTeaser} href='/subject'> Kom i gang</Link>
           </div>
         </div>
       </div>
@@ -65,7 +62,7 @@ const Main: React.FC = () => {
           </Link>
         </div>
         <div className={`${styles.cssunderThefold} ${styles.paragraf}`}>
-          <FaCss3Alt className={styles.fa} />
+          <IoAccessibility className={styles.fa} />
           <p className={styles.underThefoldHeadline}>Design</p>
           <p>
             UI/UX-design handelr om hvordan en nettside ser ut (UI) og hvordan det oppleves for brukeren å interagere med den.

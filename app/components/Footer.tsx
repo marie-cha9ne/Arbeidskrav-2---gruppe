@@ -1,8 +1,8 @@
 import styles from "./Footer.module.css";
 import { FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
-import { FaCss3Alt } from "react-icons/fa";
 import { FaArrowUp } from "react-icons/fa";
+import { IoAccessibility } from "react-icons/io5";
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
         </div>
 
         <div className={styles.css}>
-          <FaCss3Alt className={`${styles.fa} ${styles.css}`} />
-          <h2 >CSS</h2>
+          <IoAccessibility className={`${styles.fa} ${styles.css}`} />
+          <h2>Design</h2>
         </div>
       </section>
       <section className={styles.contact}>
