@@ -59,7 +59,7 @@ const Main: React.FC = () => {
             sider til engasjerende og funksjonelle opplevelser.
           </p>
           <Link className={styles.callToAction} href="/subject/sub-js">
-            Lær Javascript
+            Lær JS
           </Link>
         </div>
         <div className={`${styles.cssunderThefold} ${styles.paragraf}`}>
