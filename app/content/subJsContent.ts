@@ -19,13 +19,15 @@ export const subjectJsContent: ArticleSection[] =[{
     "Et objekt er en måte å samle informasjon på i små pakker. Du kan tenkepå det som en perm med faner, der hver fane har et navn (nøkkel) og inneholder en verdi (informasjonen).",
     "et eksempel på et Objekt:"
   ],
-  code:`const user = {
+  code:`
+  const user = {
         name: "Jane Doe",
         age: 26,
         isStudent: true, 
-        };`,
+        };
+        `,
   list:[
-    "navn - Jane Dode",
+    "navn - Jane Doe",
     "alder - 25",
     "isStudent - true (boolsk verdi true/false)"
   ],
@@ -38,7 +40,9 @@ export const subjectJsContent: ArticleSection[] =[{
   body:[
     "Et array er en liste med ting, som ligger etter hverandre i en bestemt rekkefølge. Tenk på det som en handleliste: først står melk, så brød, så ost. eksempel:"
   ],
-  code:`const shoppingList = ["melk", "brød", "ost"];`,
+  code:`
+  const shoppingList = ["melk", "brød", "ost"];
+  `,
   note:"   Når noe i javascript skal telles starter tellingen alltid på 0 så i eksempelet over er rekkefølgen på listen:",
   list:[
     "Første element [0] er melk",
@@ -58,12 +62,14 @@ export const subjectJsContent: ArticleSection[] =[{
       body:[
         "Med map() kan vi lage et nytt array basert på en endring av hvert element i det opprinnelige arrayet. map-metoden returnerer et nytt array med resultatet av en funksjon for hvert element."
       ],
-      code:`const numbers = [1, 2, 3];
-            const doubled = numbers.map((number)=> number * 2);
+      code:`
+      const numbers = [1, 2, 3];
+      const doubled = numbers.map((number)=> number * 2);
 
-            console.log(doubled); 
+      console.log(doubled); 
             
-            //Output: [2, 4, 6]`,
+      //Output: [2, 4, 6]`,
+
       note:"Her brukes map() for å gå gjennom listen og gange verdiene inni arrayet med 2.",
     },
     {
@@ -72,13 +78,13 @@ export const subjectJsContent: ArticleSection[] =[{
         "Med filter() kan ci lage et nytt array som bare inneholder elementer som oppfyller en bestemt betingelse."
       ],
       code:`
-        const animals = ["Hund", "Katt", "Høne", "Pappegøye", "Undulat", "Hest"];
+  const animals = ["Hund", "Katt", "Høne", "Pappegøye", "Undulat", "Hest"];
 
-        const animalContainingH = animals.filter((animal) => animal.includes("h"));
+  const animalContainingH = animals.filter((animal) => animal.includes("h"));
 
-        console.log(animalContainingH);
+  console.log(animalContainingH);
 
-        //Output: ["Hund", "Høne", "Hest"]
+  //Output: ["Hund", "Høne", "Hest"]
       `,
       note:"Her brukes filter() for å gå gjennom arrayet for å finne verdiene som har bokstaven 'H' i seg. Deretter returneres det et nytt array med verdiene som tilfredstiller betingelsen"
     },

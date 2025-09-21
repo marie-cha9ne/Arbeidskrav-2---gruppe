@@ -17,10 +17,11 @@ export const subDesignContent: ArticleSection[] = [
           "/design-images/badcontrastexample.png"
         ],
         note:"Det er også kjempeviktig å legge til alt-tekster på bilder du bruker i produktet ditt, slik at personer som bruker skjermlesere får med seg innholdet. Dette er også nyttig for andre og, for eksempel hvis bildet ikke lastes inn på siden, vil brukeren fortsatt få med seg hva bildet består av",
-        code:` <img 
-                src="/dogs.jpg" 
-                alt="To dalmantinere sitter pent og ser inni kameraet, i bakgrunnen er det en oransje solnedgang" 
-                />`,
+        code:` 
+     <img 
+       src="/dogs.jpg" 
+       alt="To dalmantinere sitter pent og ser inni kameraet, i bakgrunnen er det en oransje solnedgang" 
+           />`,
       },
     ]
   },
