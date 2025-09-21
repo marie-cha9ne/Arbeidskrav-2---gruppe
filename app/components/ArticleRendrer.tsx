@@ -30,6 +30,13 @@ export default function ArticleRenderer({ content }: Props) {
         <div key={i}>
           <h3>{sub.title}</h3>
           {sub.body?.map((p, x) => <p key={x}>{p}</p>)}
+          {sub.images?.map((imgSrc, i) => (
+            <img 
+              key={i} 
+              src={imgSrc} 
+              alt={`Bilde ${i + 1} i seksjon: ${section.title}`} 
+              />
+          ))}
           {sub.code && <Example code={sub.code}/>}
           {sub.note && <p>{sub.note}</p>}
         </div>

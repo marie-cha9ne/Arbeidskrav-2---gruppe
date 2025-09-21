@@ -1,3 +1,4 @@
+import ArticleRenderer from "@/app/components/ArticleRendrer";
 export default function subjectReact(){
   return(
     <article>

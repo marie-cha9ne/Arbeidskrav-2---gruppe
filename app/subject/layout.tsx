@@ -10,7 +10,7 @@ export default function layout({children}: Readonly<{children: React.ReactNode}>
       <h1 className={styles.headline}>Faglig innhold</h1>
       {/* under navigasjons bar til de forskjellige emnene */}
       <nav className={styles.bar}>
-        <Link href="/subject/sub-css">Design prinsipper</Link>
+        <Link href="/subject/sub-design">Design prinsipper</Link>
         <Link href="/subject/sub-js">JavaScript</Link>
         <Link href="/subject/sub-react">React</Link>
       </nav>

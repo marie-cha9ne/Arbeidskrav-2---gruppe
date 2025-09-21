@@ -1,0 +1,1 @@
+import type { ArticleSection } from "./types";

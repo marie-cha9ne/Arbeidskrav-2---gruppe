@@ -8,5 +8,5 @@ export type ArticleSection = {
   noteCode?: string,
   moreText?: string,
   subSections?: ArticleSection[],
-  image?: string,
+  images?: string[],
 }
