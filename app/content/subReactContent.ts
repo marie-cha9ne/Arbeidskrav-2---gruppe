@@ -1,4 +1,4 @@
-import type { ArticleSection } from "./types";
+import type { ArticleSection } from "../data/types";
 
 export const subReactContent: ArticleSection[] = [
   {
