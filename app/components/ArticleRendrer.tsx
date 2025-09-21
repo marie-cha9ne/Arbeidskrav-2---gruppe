@@ -37,6 +37,11 @@ export default function ArticleRenderer({ content }: Props) {
               alt={`Bilde ${i + 1} i seksjon: ${section.title}`} 
               />
           ))}
+          {sub.list && (
+              <ul>
+              {sub.list.map((li, i) => <li key={i}>{li}</li>)}
+              </ul>
+          )}
           {sub.code && <Example code={sub.code}/>}
           {sub.note && <p>{sub.note}</p>}
         </div>
