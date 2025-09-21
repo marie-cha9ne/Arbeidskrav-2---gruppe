@@ -1,7 +1,6 @@
-export default function subjectJs(){
-  return(
-    <article>
-      <h2>Faginnhold JavaScript</h2>
-    </article>
-  )
+import ArticleRenderer from "@/app/components/ArticleRendrer";
+import { subjectJsContent } from "@/app/content/subJsContent";
+
+export default function subjectJsPage() {
+  return <ArticleRenderer content={subjectJsContent}/>
 }
