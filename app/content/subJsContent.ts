@@ -184,5 +184,8 @@ export const subjectJsContent: ArticleSection[] =[{
       note:"Her lager vi en counter som starer på 0. While-loopen sier: 'Så lenge counter er mindre enn eller lik 5, vil loopen kjøre. Console kjører ut verdien av counter og counter øker med 1 for hver runde til den når 5. Når counter går inn for sin 6 runde er ikke betingelsen i while-loopen lenger sann, og loopen avsluttes.'"
     }
   ]
+},
+{
+  title:"Oppsummering"
 }
 ]

@@ -4,7 +4,7 @@ export const subDesignContent: ArticleSection[] = [
   {
     title:"Design",
     body:[
-      "En viktig del av webutvikling er at koden man lagerer så brukervennlig, slik at de som skal ta i bruk av applikasjonen eller nettstedet ditt enkelt kan navigere mellom ulike deler, finne det de leter etter, og at man ikke blir forstyrret av unødvendige elementer. Brukervennlig design er et eget område innen webutvikling, og kalles User Experience Design (UX Design)."
+      "En viktig del av webutvikling er at koden man lager er så brukervennlig, slik at de som skal ta i bruk av applikasjonen eller nettstedet ditt enkelt kan navigere mellom ulike deler, finne det de leter etter, og at man ikke blir forstyrret av unødvendige elementer. Brukervennlig design er et eget område innen webutvikling, og kalles User Experience Design (UX Design)."
     ],
     subSections:[
       {
@@ -20,7 +20,8 @@ export const subDesignContent: ArticleSection[] = [
         code:` 
      <img 
        src="/dogs.jpg" 
-       alt="To dalmantinere sitter pent og ser inni kameraet, i bakgrunnen er det en oransje solnedgang" 
+       alt="To dalmantinere sitter pent og ser inni kameraet, 
+       i bakgrunnen er det en oransje solnedgang" 
            />`,
       },
     ]
@@ -38,5 +39,8 @@ export const subDesignContent: ArticleSection[] = [
       "Teste: Ved å teste prototypene får vi uvurdelig tilbakemelding på om det vi har tenkt faktisk er forståelig og brukbart. Sitter man alene med en prototype kan man lett se seg blind og tenke at det er kjempelett fordi jeg forstår det! Litt som med koding og, ved å få noen andre til å teste løsningen dukker det opp ny innsikt man aldri kunne tenkt på selv. Ved å teste med brukere som er tiltenkt målgruppen, får man også gode tilbakemeldinger på om løsningen faktisk vil hjelpe dem med sine utfordringer."
     ],
     images:["/design-images/designthinking.png"],
+  },
+  {
+    title:"Oppsummering"
   }
 ]
