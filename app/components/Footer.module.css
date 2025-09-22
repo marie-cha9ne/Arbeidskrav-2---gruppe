@@ -2,13 +2,13 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    background-color: #000000;
-    border: 1px solid black;
+    background-color: #ffff ;
+    border: 1px solid #ffff;
     padding: 1em 0;
 }
 
 .footerSection{
-     color: whitesmoke;
+     color:#231942;
      display: flex;
      justify-content: space-evenly;
 
@@ -25,18 +25,18 @@
     height: 55px;
 }
 .react:hover{
-    color: aqua;
+    color: #BE95C4;
 }
 .js:hover{
-    color: yellow;
+    color: #BE95C4;
 }
 .css:hover{
-    color: rgb(27, 27, 203);
+    color: #BE95C4;
 }
 .contact{
     display: flex;
     justify-content: space-evenly;
-     color: whitesmoke;
+     color: #231942;
      gap: 1em;
      font-size: 1em;
      margin-top: 3em;
