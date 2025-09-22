@@ -11,11 +11,17 @@ export const subMainContent: ArticleSection[] = [
         title:"Innholdet på siden som du kommer til å finne dekker:",
         list:[
           "En introduksjon til JavaScript og sentrale konsepter som objekter, arrays, if-setninger og nyttige metoder som blant annet: map(), find(), concat() og mer!",
-          "En overasikt over designprinsipper, med fokus på universell utforming, farger og kontraster, samt typografi og enhetlig bruk av skriftstørrelser",
-          "En innføring i React -  et av dde mest brukte rammeverkene for å bygge interaktive brukergrensesnitt - hvor vi ser nærmere på konsepter som komponenter, props, state og den virituelle DOM-en",
+          "En oversikt over designprinsipper, med fokus på universell utforming, farger og kontraster, samt typografi og enhetlig bruk av skriftstørrelser",
+          "En innføring i React -  et av de mest brukte rammeverkene for å bygge interaktive brukergrensesnitt - hvor vi ser nærmere på konsepter som komponenter, props, state og den virtuelle DOM-en",
         ],
         note:"Denne siden er for deg som ønsker å forstå både det tekniske og det visuelle ved webutvikling."
-      }
-    ]
+      },
+    ],
+  },
+  {
+    title:"Utfordre deg selv",
+    body:[
+      "Etter at du har lest deg opp på faginnholdet, kan du teste ut kunnskapen din ved å utføre noen av våre flervalgs oppgaver! Skal du også bli en av the wizards of the web?"
+    ],
   }
 ]

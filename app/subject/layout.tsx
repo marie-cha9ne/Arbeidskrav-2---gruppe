@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import Link from "next/link";
 import styles from './sub.module.css';
 
@@ -6,16 +5,16 @@ import styles from './sub.module.css';
 
 export default function layout({children}: Readonly<{children: React.ReactNode}>){
   return (
-    <section>
+    <section className={styles.main}>
       <h1 className={styles.headline}>
         <Link href="/subject">
         Fagliginnhold</Link></h1>
         
       {/* under navigasjons bar til de forskjellige emnene */}
       <nav className={styles.bar}>
-        <Link href="/subject/sub-design">Design prinsipper</Link>
-        <Link href="/subject/sub-js">JavaScript</Link>
-        <Link href="/subject/sub-react">React</Link>
+        <Link href="/subject/sub-design" className={styles.links}>Design prinsipper</Link>
+        <Link href="/subject/sub-js" className={styles.links}>JavaScript</Link>
+        <Link href="/subject/sub-react" className={styles.links}>React</Link>
       </nav>
       {/* alt innhold på faglig innhold hovedside blir rendret i children */}
        {children}
