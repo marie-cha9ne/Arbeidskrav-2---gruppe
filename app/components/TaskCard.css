@@ -9,6 +9,13 @@ label {
   flex-direction: column;
   align-items: start;
   gap: 10px;
-  margin: 2rem;
+  margin: 2rem 0rem 3rem;
+  box-shadow: 1px 1px 10px #be95c4;
+  border-radius: 15px;
+  padding: 3rem;
 }
 
+.radioButtonDiv img {
+  max-width: 800px;
+  object-fit: contain;
+}

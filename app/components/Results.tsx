@@ -1,4 +1,4 @@
-import { Answer, MultipleChoice, ResultsProps } from "../data/types";
+import { ResultsProps } from "../data/types";
 import { calculateScore } from "../utils/calculateScore";
 import { Tasks } from "../data/tasks";
 import "./Results.css";
@@ -8,7 +8,7 @@ export default function Results({ userAnswers }: ResultsProps) {
   const score = finalResult.score;
 
   return (
-    <article>
+    <article className="result-summary ">
       {score > 7 ? (
         <h1>Gratulerer, du fikk {score} poeng og har bestått!</h1>
       ) : (
