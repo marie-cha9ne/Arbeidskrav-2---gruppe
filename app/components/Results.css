@@ -1,5 +1,10 @@
-.resultSummary {
+.result-summary {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  box-shadow: 1px 1px 10px #be95c4;
+  border-radius: 15px;
+  padding: 20px 5px;
 }
