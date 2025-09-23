@@ -9,7 +9,7 @@ const Main: React.FC = () => {
       <div className={styles.teaser}>
         <div className={styles.textbox}>
           <div className={styles.introtext}>
-            <h1>T W W</h1>
+            <h1 className={styles.h1}>The Wizards Of Web</h1>
             <p>
               Gjør som tusenvis av andre webutvikling-interesserte: Lær
               spennenende teknikker, ta kurset og bli en ekte Web-Wizard du og!
@@ -25,9 +25,9 @@ const Main: React.FC = () => {
               <p>Javascript</p>
               <p>React</p>
             </div>
-            <Link className={styles.callToActionTeaser} href="/subject">
+            <Link className={styles.callToAction} href="/subject">
               {" "}
-              Kom i gang
+              Kom igang
             </Link>
           </div>
         </div>
@@ -59,8 +59,7 @@ const Main: React.FC = () => {
             sider til engasjerende og funksjonelle opplevelser.
           </p>
           <Link className={styles.callToAction} href="/subject/sub-js">
-            {" "}
-            Lær Javascript
+            Lær JS
           </Link>
         </div>
         <div className={`${styles.cssunderThefold} ${styles.paragraf}`}>

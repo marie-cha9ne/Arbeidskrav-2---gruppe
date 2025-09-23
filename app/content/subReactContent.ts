@@ -23,7 +23,15 @@ export const subReactContent: ArticleSection[] = [
       }
     `,
     note: "For å bruke komponentet i en annen del av appen din, skriver du det som en vanlig HTML-tag:",
-    noteCode: `<Welcome />`,
+    noteCode: `
+    export default function Home(){
+    return(
+    <main>
+      <Welcome />
+    </main>
+      )
+    }
+    `,
     moreText:
       "Dette gjør koden mer organiert, gjenbrukbar og lett å vedlikeholde.",
   },
@@ -96,7 +104,7 @@ export const subReactContent: ArticleSection[] = [
     "React løser dette med Virtual DOM:"
    ],
    list:[
-    "En kopi av DOM-en holdes i minnet (det er 'virtual DOM'.",
+    "En kopi av DOM-en holdes i minnet (det er 'virtual DOM').",
     "Når noe endres, oppdateres først denne kopien.",
     "React sammenligner den nye og gamle kopien (diffing).",
     "Kun de nødvendige delene av ekte DOM blir oppdatert.",
