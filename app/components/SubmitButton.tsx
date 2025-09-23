@@ -11,5 +11,5 @@ export default function SubmitButton({ onSubmit }: SubmiButtonProps) {
     onSubmit();
   }
 
-  return <button onClick={handleClick}>Send inn svar</button>;
+  return <button type="button" onClick={handleClick}>Send inn svar</button>;
 }

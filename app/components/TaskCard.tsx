@@ -26,8 +26,8 @@ export default function TaskCard({ tasks, submitted }: TaskCardProps) {
           selected === task.options[task.correctIndex];
 
         return (
-          <div key={task.id} className="radioButtonDiv">
-            <h2>
+          <div key={task.id} className="radioButtonDiv" role="group" aria-labelledby={`question-${task.id}`}>
+            <h2 id={`question-${task.id}`}>
               {task.id}: {task.question}
             </h2>
 
@@ -41,12 +41,15 @@ export default function TaskCard({ tasks, submitted }: TaskCardProps) {
                   value={optionText}
                   checked={selected === optionText}
                   onChange={() => setAnswer(task.id, optionText)}
+                  aria-describedby={`feedback-${task.id}`}
                 />
                 {optionText}
               </label>
             ))}
             {submitted && (
               <p
+              id={`feedback-${task.id}`}
+              role="status"
                 style={{
                   color: isCorrect ? "green" : "red",
                   fontWeight: "bold",

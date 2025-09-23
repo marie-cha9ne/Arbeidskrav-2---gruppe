@@ -7,12 +7,12 @@ import styles from './sub.module.css';
 export default function layout({children}: Readonly<{children: React.ReactNode}>){
   return (
     <section>
-      <h1 className={styles.headline}>
+      <h1 id="subjectNav" className={styles.headline}>
         <Link href="/subject">
         Fagliginnhold</Link></h1>
         
       {/* under navigasjons bar til de forskjellige emnene */}
-      <nav className={styles.bar}>
+      <nav className={styles.bar} aria-label="subjectNav">
         <Link href="/subject/sub-design">Design prinsipper</Link>
         <Link href="/subject/sub-js">JavaScript</Link>
         <Link href="/subject/sub-react">React</Link>

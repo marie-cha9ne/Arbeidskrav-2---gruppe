@@ -10,20 +10,20 @@ const Footer: React.FC = () => {
       <section className={styles.footerSection}>
         <div className={styles.react}>
           <Link href="/subject/sub-react">
-            <FaReact className={`${styles.fa} ${styles.react}`} />
+            <FaReact aria-hidden="true" className={`${styles.fa} ${styles.react}`} />
             <h2>React</h2>
           </Link>
         </div>
         <div className={styles.js}>
           <Link href="/subject/sub-js">
-            <SiJavascript className={`${styles.fa} ${styles.js}`} />
+            <SiJavascript aria-hidden="true" className={`${styles.fa} ${styles.js}`} />
             <h2>Javascript</h2>
           </Link>
         </div>
 
         <div className={styles.css}>
           <Link href="/subject/sub-design">
-            <IoAccessibility className={`${styles.fa} ${styles.css}`} />
+            <IoAccessibility aria-hidden="true" className={`${styles.fa} ${styles.css}`} />
             <h2>Design</h2>
           </Link>
         </div>

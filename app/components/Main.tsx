@@ -25,7 +25,7 @@ const Main: React.FC = () => {
               <p>Javascript</p>
               <p>React</p>
             </div>
-            <Link className={styles.callToAction} href="/subject">
+            <Link className={styles.callToAction} href="/subject" aria-label="Kom igang med kurset">
               {" "}
               Kom igang
             </Link>
@@ -34,9 +34,9 @@ const Main: React.FC = () => {
       </div>
 
       <div className={styles.underTheFold}>
-        <div className={`${styles.reactunderThefold} ${styles.paragraf}`}>
-          <FaReact className={styles.fa} />
-          <p className={styles.underThefoldHeadline}>React</p>
+        <div className={`${styles.reactunderThefold} ${styles.paragraf}`} role="region" aria-labelledby="ReactHeading">
+          <FaReact className={styles.fa} aria-hidden="true" />
+          <p className={styles.underThefoldHeadline} id="ReactHeading">React</p>
           <p>
             React er et kraftig rammeverk for å bygge interaktive
             brukergrensesnitt som gjør koden mer strukturert og gjenbrukbar. Med
@@ -44,27 +44,27 @@ const Main: React.FC = () => {
             data endrer seg. Det gir deg friheten til å bygge alt fra små
             komponenter til store, komplekse løsninger.
           </p>
-          <Link className={styles.callToAction} href="/subject/sub-react">
+          <Link className={styles.callToAction} href="/subject/sub-react" aria-label="Gå til react delen av kruset">
             {" "}
             Lær React
           </Link>
         </div>
-        <div className={`${styles.JavaScriptunderTheFold} ${styles.paragraf}`}>
-          <SiJavascript className={styles.fa} />
-          <p className={styles.underThefoldHeadline}>Javascript</p>
+        <div className={`${styles.JavaScriptunderTheFold} ${styles.paragraf}`}  role="region" aria-labelledby="JavascriptHeading">
+          <SiJavascript className={styles.fa} aria-hidden="true" />
+          <p className={styles.underThefoldHeadline} id="JavascriptHeading">Javascript</p>
           <p>
             JavaScript er språket som gjør nettsider levende, ved å gi dem
             interaktivitet og logikk. Det brukes overalt – fra små animasjoner
             til hele webapplikasjoner. Med JavaScript kan du gå fra statiske
             sider til engasjerende og funksjonelle opplevelser.
           </p>
-          <Link className={styles.callToAction} href="/subject/sub-js">
+          <Link className={styles.callToAction} href="/subject/sub-js" aria-label="Gå til Javascript delen av kruset">
             Lær JS
           </Link>
         </div>
-        <div className={`${styles.cssunderThefold} ${styles.paragraf}`}>
-          <IoAccessibility className={styles.fa} />
-          <p className={styles.underThefoldHeadline}>Design</p>
+        <div className={`${styles.cssunderThefold} ${styles.paragraf}`}  role="region" aria-labelledby="DesignHeading">
+          <IoAccessibility className={styles.fa} aria-hidden="true" />
+          <p className={styles.underThefoldHeadline} id="DesignHeading">Design</p>
           <p>
             UI/UX-design handelr om hvordan en nettside ser ut (UI) og hvordan
             det oppleves for brukeren å interagere med den.
@@ -75,7 +75,7 @@ const Main: React.FC = () => {
             en bedre opplevelse for alle.
           </p>
           <p className={styles.cssLogo}></p>
-          <Link className={styles.callToAction} href="/subject/sub-design">
+          <Link className={styles.callToAction} href="/subject/sub-design" aria-label="Gå til Design delen av kruset">
             {" "}
             Lær Design
           </Link>

@@ -35,16 +35,23 @@ const Hamburgermenu: React.FC = () => {
           scrolled ? nav.light : nav.dark
         }`}
         onClick={() => toggleMenu()}
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+        aria-expanded={isOpen}
+        aria-controls="main-menu"
       >
         ☰
       </div>
       <div
         className={`${nav.closingBtn} ${!isOpen ? nav.btnClosed : ""}`}
         onClick={() => closeMenu()}
+        aria-label="Close-menu"
       >
         ✖
       </div>
-      <div className={`${nav.hamburgerMenu} ${isOpen ? nav.menuOpen : ""}`}>
+      <div
+        className={`${nav.hamburgerMenu} ${isOpen ? nav.menuOpen : ""}`}
+        id="main-menu"
+      >
         <ul onClick={() => closeMenu()}>
           <Link href="/">
             <li>Home</li>
