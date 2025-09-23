@@ -16,7 +16,7 @@ export const subjectJsContent: ArticleSection[] =[{
 {
   title: "Objekter",
   body:[
-    "Et objekt er en måte å samle informasjon på i små pakker. Du kan tenkepå det som en perm med faner, der hver fane har et navn (nøkkel) og inneholder en verdi (informasjonen).",
+    "Et objekt er en måte å samle informasjon på i små pakker. Du kan tenkepå det som en perm med faner, der hver fane har et navn (nøkkel) og inneholder en verdi (informasjonen). Objekter brukes når du vil lagre flere typer informasjon som hører sammen. I stedet for å ha en variabel for navn, en for alder og en for student status, kan du samle alt i ett objekt.",
     "et eksempel på et Objekt:"
   ],
   code:`
@@ -32,13 +32,18 @@ export const subjectJsContent: ArticleSection[] =[{
     "isStudent - true (boolsk verdi true/false)"
   ],
   note:" for å hente ut denne informasjonen kan vi bruke console.log() som dette:",
-  noteCode: "console.log(user.name)",
+  noteCode: `
+  console.log(user.name) 
+  
+  //Output: Jane Doe
+   `,
   moreText: "For å se den uthentede informasjonen høyreklikker du på siden - klikk på inspiser/inspect og gå til console. der vil du se at navnet gitt i objektet vises. Objekter er veldig nyttige når vi skal representere ting som finnes i virkeligheten - f.eks en bruker, en vare i en nettbutikk eller en artikkel.",
 },
 {
   title: "Arrays",
   body:[
-    "Et array er en liste med ting, som ligger etter hverandre i en bestemt rekkefølge. Tenk på det som en handleliste: først står melk, så brød, så ost. eksempel:"
+    "Et array er en liste med ting, som ligger etter hverandre i en bestemt rekkefølge. Tenk på det som en handleliste: først står melk, så brød, så ost. Arrays brukes i JavaScript for å lagre flere verdier i en og samme variabel, isteden for å måtte lage en variabel for hver enkelte ting.",
+    "Eksempel:"
   ],
   code:`
   const shoppingList = ["melk", "brød", "ost"];
@@ -49,7 +54,7 @@ export const subjectJsContent: ArticleSection[] =[{
     "Andre element [1] er brød",
     "Tredje element [2] er ost"
   ],
-  moreText:` Arrays er nyttige når du skal bruke flere verdier av samme type - for eksempel en liste med brukere, tall eller produkter.`,
+  moreText:` Arrays er nyttige fordi de gir oss en måte å lagre, sortere og jobbe med flere verdier samlet. Dette er spesielt nyttig når vi skal gjenta operasjoner - for eksempel vise produkter i en nettbutikk, eller gå gjennom en liste med brukernavn eller tall.`,
 },
 {
   title:"Array metoder",
@@ -123,7 +128,7 @@ export const subjectJsContent: ArticleSection[] =[{
 {
   title:"If-statements",
   body:[
-    "If-statements er som små veiskilt i koden. 'Hvis noe er sant, gå denne veien. Hvis ikke gå en annen vei.'"
+    "If-statements er som små veiskilt i koden. 'Hvis noe er sant, gå denne veien. Hvis ikke gå en annen vei.' Dette er grunnleggende for hvordan vi får koden til å ta beslutninger. Når du skriver JavaScript, vil du ofte være i situasjoner der det er behov for å sjekke en tilstand eller betingelse, og utføre noe bare hvis det er sant - og eventuelt noe annet dersom det ikke er det."
   ],
   code:`
   const age = 17;
@@ -139,7 +144,7 @@ export const subjectJsContent: ArticleSection[] =[{
     "Hvis ja -- skriv ut 'Du er myndig'",
     "Hvis nei -- skriv ur 'Du er ikke myndig enda'"
   ],
-  note:"Dette er grunnlaget for logikken i koden -vi kan bestemme hva som skal skje basert på situasjonen.",
+  note:"Dette er grunnlaget for logikken i koden -vi kan bestemme hva som skal skje basert på situasjonen. Når programmet kjører, evaluerer det betingelsen i if(...). Hvis betingelsen er sann, utføres koden inni klammeparantesene { }. Hvis ikke hopper den over if-blokken og går videre til en eventuell else-blokk - eller til neste linje med kode. ",
 },
 {
   title:"Loops / Løkker",
@@ -163,7 +168,7 @@ export const subjectJsContent: ArticleSection[] =[{
         "Løkken starter med å sette en start variabel på i:'let i = 0;'",
         "For hver loop sjekkes en betingelse: 'Hvis i er mindre enn 5/ i < 5'. Hvis betingelsen er sann, fortsett loopen",
         "Loopen kjøres",
-        "For hver loop øker i med 1: 'i++'"
+        "For hver loop øker i med 1: ' i++ '"
       ]
     },
     {
@@ -186,6 +191,9 @@ export const subjectJsContent: ArticleSection[] =[{
   ]
 },
 {
-  title:"Oppsummering"
+  title:"Oppsummering",
+  body:[
+    "I denne delen har du fått en innføring i noen av de viktigste konseptene i JavaScript, som er et av de mest brukte programmerings-språkene innen webutvikling. Du ha sett hvordan JavaScript gjør nettsider interaktive og dynamiske, og hvordan det jobber sammen med HTML for struktur og CSS for utseende. Vi har gått gjennom hvordan objekter brukes for å samle og organisere informasjon i nøkkel-verdi-par. Hvordan arrays fungerer som lister med elementer i rekkefølge, samt som du har også lært litt om forskjellige nyttige array-metoder. I tillegg har vi sett op if-setninger, som lar deg ta valg i koden basert på betingelser, og hvordan løkker/loops som for og while gjør det mulig å gjenta kode flere ganger automatisk. Til sammen fir dette deg en god start på å skrive logisk og effektiv JavaScript kode."
+  ]
 }
 ]

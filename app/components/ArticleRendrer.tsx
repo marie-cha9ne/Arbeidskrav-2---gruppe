@@ -1,6 +1,7 @@
 import Example from "@/app/components/CodeExample";
 import type { ArticleSection } from "@/app/data/types";
 import styles from '../subject/sub.module.css';
+import Link from "next/link";
 
 type Props = {
   content: ArticleSection[];
@@ -31,7 +32,7 @@ export default function ArticleRenderer({ content }: Props) {
               key={i} 
               src={imgSrc} 
               alt={`Bilde ${i + 1} i seksjon: ${section.title}`}
-              className={styles.images}  
+              className={styles.sectImage}  
               />
           ))}
 {/* ^^Viser bilder dersom det finnes i seksjonen. */}
@@ -41,6 +42,14 @@ export default function ArticleRenderer({ content }: Props) {
 
       {section.noteCode && <Example code={section.noteCode} className={styles.codeLine}/>}
 {/* ^^Viser et lite ekstra kode eksempel */}
+      {section.moreText && <p className={styles.content}>{section.moreText}</p>}
+
+      {section.button && <div className={styles.btnBox}>
+        <Link href={section.button.href}>
+      <button className={styles.btn}>{section.button.text}</button>
+      </Link>
+      </div>
+      }
       
       {section.subSections?.map((sub, i)=> (
         <div key={i}>
@@ -53,7 +62,7 @@ export default function ArticleRenderer({ content }: Props) {
               key={i} 
               src={imgSrc} 
               alt={`Bilde ${i + 1} i seksjon: ${section.title}`}
-              className={styles.subImages} 
+              className={styles.subImages}
               />
           ))}
 
@@ -66,6 +75,8 @@ export default function ArticleRenderer({ content }: Props) {
           )}
           
           {sub.note && <p className={styles.content}>{sub.note}</p>}
+
+          {sub.moreText && <p className={styles.content}>{sub.moreText}</p>}
         </div>
 // Her vises subseksjoner (om det finnes) som egene blokker inni hovedseksjonen. 
       ))}

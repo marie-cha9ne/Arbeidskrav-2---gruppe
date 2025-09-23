@@ -10,9 +10,9 @@ export const subMainContent: ArticleSection[] = [
       {
         title:"Innholdet på siden som du kommer til å finne dekker:",
         list:[
-          "En introduksjon til JavaScript og sentrale konsepter som objekter, arrays, if-setninger og nyttige metoder som blant annet: map(), find(), concat() og mer!",
-          "En oversikt over designprinsipper, med fokus på universell utforming, farger og kontraster, samt typografi og enhetlig bruk av skriftstørrelser",
-          "En innføring i React -  et av de mest brukte rammeverkene for å bygge interaktive brukergrensesnitt - hvor vi ser nærmere på konsepter som komponenter, props, state og den virtuelle DOM-en",
+          "En introduksjon til JavaScript og sentrale konsepter som objekter, arrays, if-setninger og nyttige metoder som blant annet: map(), find() og mer.",
+          "En oversikt over designprinsipper, med fokus på universell utforming, farger og kontraster, samt typografi og enhetlig bruk av skriftstørrelser.",
+          "En innføring i React -  et av de mest brukte rammeverkene for å bygge interaktive brukergrensesnitt - hvor vi ser nærmere på konsepter som komponenter, props, state og den virtuelle DOM",
         ],
         note:"Denne siden er for deg som ønsker å forstå både det tekniske og det visuelle ved webutvikling."
       },
@@ -21,7 +21,12 @@ export const subMainContent: ArticleSection[] = [
   {
     title:"Utfordre deg selv",
     body:[
-      "Etter at du har lest deg opp på faginnholdet, kan du teste ut kunnskapen din ved å utføre noen av våre flervalgs oppgaver! Skal du også bli en av the wizards of the web?"
+      "Her finner du noe av det du trenger for å forstå noen av de viktige temaene innen moderde webutvikling. Enten du er helt ny eller trenger å friske opp kunnskapen din,er denne siden lager for å gi deg en litt mer lettfattelig innføring i emner som Javascript, design og React. Etter å ha lest deg opp på faginnholdet, kan du teste kunnskapen din med noen av våre flervalgsspørsmål. Det er en fin måte å se hva du har fått med deg og kanskje oppdage hva du kan lære mer om.",
+      "Skal du også bli en av the wizards of the web? Da er det bare en ting å gjøre:",
     ],
+    button:{
+      text:"Test kunnskapen din",
+      href:"./tasks"
+    }
   }
 ]
