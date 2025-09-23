@@ -61,3 +61,25 @@
   width: 500px;
   margin: 25px 200px;
 }
+
+.btnBox{
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  background-color: #231942;
+  border: none;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding:7px 15px;
+  box-shadow: 1px 1px 15px #BE95C4;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #BE95C4;
+  color:black;
+  box-shadow: 1px 1px 15px #231942;
+  transition: 0.4s ease;
+  font-weight: bold;
+}

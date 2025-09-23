@@ -44,4 +44,8 @@ export type ArticleSection = {
   moreText?: string,
   subSections?: ArticleSection[],
   images?: string[],
+  button?:{
+    text: string,
+    href:string,
+  }
 }

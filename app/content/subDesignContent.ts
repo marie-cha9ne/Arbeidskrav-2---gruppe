@@ -37,7 +37,6 @@ export const subDesignContent: ArticleSection[] = [
       "Bruk sikkelig kontrast mellom tekst og bakgrunn. Svart tekst på lys bakgrunn er ofte det tryggeste valget.",
       "Ikke bruk farge alene for å formidle viktig informajson. For eksempel: ikke marker feilmeldinger på siden kun med rødt, legg til et ikon eller tekst også."
     ],
-    note:"Verktøy som (Lenke til WebAIM) kan hjelpe deg å sjekke kontrastforhold."
   },
   {
     title:"Typografi og skriftstørrelser",

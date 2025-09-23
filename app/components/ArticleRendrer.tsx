@@ -1,6 +1,7 @@
 import Example from "@/app/components/CodeExample";
 import type { ArticleSection } from "@/app/data/types";
 import styles from '../subject/sub.module.css';
+import Link from "next/link";
 
 type Props = {
   content: ArticleSection[];
@@ -42,6 +43,13 @@ export default function ArticleRenderer({ content }: Props) {
       {section.noteCode && <Example code={section.noteCode} className={styles.codeLine}/>}
 {/* ^^Viser et lite ekstra kode eksempel */}
       {section.moreText && <p className={styles.content}>{section.moreText}</p>}
+
+      {section.button && <div className={styles.btnBox}>
+        <Link href={section.button.href}>
+      <button className={styles.btn}>{section.button.text}</button>
+      </Link>
+      </div>
+      }
       
       {section.subSections?.map((sub, i)=> (
         <div key={i}>

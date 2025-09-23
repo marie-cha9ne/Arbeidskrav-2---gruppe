@@ -23,7 +23,10 @@ export const subMainContent: ArticleSection[] = [
     body:[
       "Her finner du noe av det du trenger for å forstå noen av de viktige temaene innen moderde webutvikling. Enten du er helt ny eller trenger å friske opp kunnskapen din,er denne siden lager for å gi deg en litt mer lettfattelig innføring i emner som Javascript, design og React. Etter å ha lest deg opp på faginnholdet, kan du teste kunnskapen din med noen av våre flervalgsspørsmål. Det er en fin måte å se hva du har fått med deg og kanskje oppdage hva du kan lære mer om.",
       "Skal du også bli en av the wizards of the web? Da er det bare en ting å gjøre:",
-      "<BUTTON>TEST KUNNSKAPEN DIN</BUTTON>"
     ],
+    button:{
+      text:"Test kunnskapen din",
+      href:"./tasks"
+    }
   }
 ]
