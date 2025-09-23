@@ -37,7 +37,7 @@ const Main: React.FC = () => {
         <div className={`${styles.reactunderThefold} ${styles.paragraf}`}>
           <FaReact className={styles.fa} />
           <p className={styles.underThefoldHeadline}>React</p>
-          <p>
+          <p className={styles.underThefoldTextboks}>
             React er et kraftig rammeverk for å bygge interaktive
             brukergrensesnitt som gjør koden mer strukturert og gjenbrukbar. Med
             React kan du enkelt lage dynamiske apper som oppdateres raskt når
@@ -52,7 +52,7 @@ const Main: React.FC = () => {
         <div className={`${styles.JavaScriptunderTheFold} ${styles.paragraf}`}>
           <SiJavascript className={styles.fa} />
           <p className={styles.underThefoldHeadline}>Javascript</p>
-          <p>
+          <p className={styles.underThefoldTextboks}>
             JavaScript er språket som gjør nettsider levende, ved å gi dem
             interaktivitet og logikk. Det brukes overalt – fra små animasjoner
             til hele webapplikasjoner. Med JavaScript kan du gå fra statiske
@@ -65,7 +65,7 @@ const Main: React.FC = () => {
         <div className={`${styles.cssunderThefold} ${styles.paragraf}`}>
           <IoAccessibility className={styles.fa} />
           <p className={styles.underThefoldHeadline}>Design</p>
-          <p>
+          <p className={styles.underThefoldTextboks}>
             UI/UX-design handelr om hvordan en nettside ser ut (UI) og hvordan
             det oppleves for brukeren å interagere med den.
             <br />

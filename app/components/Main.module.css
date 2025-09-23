@@ -102,6 +102,9 @@
   width: 80%;
 
 }
+.underThefoldTextboks{
+  min-height: 200px;
+}
 
 .callToAction {
   margin: 1.5rem auto;
