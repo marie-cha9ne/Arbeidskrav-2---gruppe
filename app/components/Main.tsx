@@ -13,7 +13,6 @@ const Main: React.FC = () => {
             <p>
               Gjør som tusenvis av andre webutvikling-interesserte: Lær
               spennenende teknikker, ta kurset og bli en ekte Web-Wizard du og!
-              .
             </p>
           </div>
 
