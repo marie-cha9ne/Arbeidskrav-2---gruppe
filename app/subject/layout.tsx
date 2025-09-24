@@ -6,9 +6,9 @@ import styles from './sub.module.css';
 export default function layout({children}: Readonly<{children: React.ReactNode}>){
   return (
     <section className={styles.main}>
-      <h1 className={styles.headline}>
+      <h1 className={styles.bigHeadline}>
         <Link href="/subject">
-        Fagliginnhold</Link></h1>
+        Faginnhold</Link></h1>
         
       {/* under navigasjons bar til de forskjellige emnene */}
       <nav className={styles.bar}>

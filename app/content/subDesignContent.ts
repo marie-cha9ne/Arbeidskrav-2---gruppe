@@ -83,7 +83,19 @@ export const subDesignContent: ArticleSection[] = [
   {
     title:"Oppsummering",
     body:[
-      "På denne siden skal du ha lært at design er en sentral del av webutvikling, og handler om mer enn bare utseende. Universell utforming sikrer at alle (uansett funksjonsevne) kan bruke nettstedet. Farger og kontrasster påvirker både lesbarhet og tilgjengelighet. Typografi og skriftstørrelser må være tilpasset skjerm og brukere, og bør være fleksible med enheter som rem. Design er en iterativ prosess, der testing og inniskt fra brukerne former sluttresultatet. Et godt design gjør ikke nettsiden bare pen, men nyttig, tilgjengelig og enkel å bruke."
-    ]
+      "På denne siden skal du ha lært at design er en sentral del av webutvikling, og handler om mer enn bare utseende. Universell utforming sikrer at alle (uansett funksjonsevne) kan bruke nettstedet. Farger og kontrasster påvirker både lesbarhet og tilgjengelighet. Typografi og skriftstørrelser må være tilpasset skjerm og brukere, og bør være fleksible med enheter som rem. Design er en iterativ prosess, der testing og inniskt fra brukerne former sluttresultatet. Et godt design gjør ikke nettsiden bare pen, men nyttig, tilgjengelig og enkel å bruke.",
+    ],
+    subSections:[
+      {
+        title:"Klar for en utfordring?",
+        body:[
+          "Etter å ha lest gjennom faginnholdet Design, Javascript og React, kan du teste kunnskapen din med noen av våre flervalgsspørsmål! "
+        ],
+         button:{
+          text:"Test kunnskapen din",
+          href:"./tasks"
+        }
+      }
+    ],
   }
 ]

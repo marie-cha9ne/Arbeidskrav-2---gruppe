@@ -45,8 +45,8 @@ export const subReactContent: ArticleSection[] = [
     subSections: [
       {
         title: "useState",
-        body:[
-          "useState kan ses på som å bruke en let-variabel i javaScript. der du definerer en state som er har den nåværende verdien, og en setState som oppdaterer variabelen."
+        body: [
+          "useState kan ses på som å bruke en let-variabel i javaScript. der du definerer en state som er har den nåværende verdien, og en setState som oppdaterer variabelen.",
         ],
         code: `
            import { useState } from "react";
@@ -67,14 +67,14 @@ export const subReactContent: ArticleSection[] = [
           "Når brukeren klikker på knappen, oppdateres state via setCount.",
           "Komponentet rendres på nytt hver gang state endres.",
         ],
-        note:"State gjør det mulig å lage interaktive og dynamiske nettsider, det er en av kjernedelene i det som gjør React så kraftfullt."
+        note: "State gjør det mulig å lage interaktive og dynamiske nettsider, det er en av kjernedelene i det som gjør React så kraftfullt.",
       },
       {
-        title:"useEffect",
-        body:[
-          "useEffect brukes for å gjøre noe etter at komponentet har blitt rendret, f.eks. hente data eller starte en timer."
+        title: "useEffect",
+        body: [
+          "useEffect brukes for å gjøre noe etter at komponentet har blitt rendret, f.eks. hente data eller starte en timer.",
         ],
-        code:`
+        code: `
         import { useState, useEffect } from "react";
 
         export default function Timer(){
@@ -91,20 +91,20 @@ export const subReactContent: ArticleSection[] = [
             return <p>Tid: {seconds} sekunder</p>;
         }
         `,
-        list:[
+        list: [
           "Her oppretter vi en timer som teller opp hvert sekund.",
-          "useEffect starter når komponenten vises for første gang, og stopper når det fjernes."
-        ]
-      }
+          "useEffect starter når komponenten vises for første gang, og stopper når det fjernes.",
+        ],
+      },
     ],
   },
   {
-    title:"Props i React",
-    body:[
+    title: "Props i React",
+    body: [
       "I React brukes props/properties til å sende data fra en komponent til en annen. Det gjør det mulig å lage komponenter som er gjenbrukbare og fleksible, fordi man kan endre hva de viser ved å sende inn uliike verider som 'instillinger'.",
-      "Når du lager et komponent, kan du tenke på props som argumentene du sender inn for å bestemme hvordan komponenten skal se ut eller oppføre seg."
+      "Når du lager et komponent, kan du tenke på props som argumentene du sender inn for å bestemme hvordan komponenten skal se ut eller oppføre seg.",
     ],
-    code:`
+    code: `
      //ParentComponent.jsx
     import ChildComponent from './ChildComponent';
 
@@ -117,8 +117,8 @@ export const subReactContent: ArticleSection[] = [
      );
     }
     `,
-    note:"I eksempelet over definerer vi hvilke arbumenter vi trenger i komponentet vårt. Når vi rendrer child-komponentet, skal man sende inn props som atributter. I child-komponentet (i eksempelet under) får komponenten tilgang til props enten ved å definere props som parameter i funksjonen, eller ved destructuring metoden ved å definere spesifikt hva i props du skal ta i bruk.",
-    noteCode:`
+    note: "I eksempelet over definerer vi hvilke arbumenter vi trenger i komponentet vårt. Når vi rendrer child-komponentet, skal man sende inn props som atributter. I child-komponentet (i eksempelet under) får komponenten tilgang til props enten ved å definere props som parameter i funksjonen, eller ved destructuring metoden ved å definere spesifikt hva i props du skal ta i bruk.",
+    noteCode: `
     //ChildComponent.jsx
 
     export default function ChildComponent(props){
@@ -140,29 +140,42 @@ export const subReactContent: ArticleSection[] = [
      );
     }
     `,
-    moreText:"Props gjør det mulig å sende tekst, tall, funksjoner eller til og med andre komponenter. Dette gjør det mulig å bygge applikasjoner som er modulære, logiske og lett å vedlikeholde."
+    moreText:
+      "Props gjør det mulig å sende tekst, tall, funksjoner eller til og med andre komponenter. Dette gjør det mulig å bygge applikasjoner som er modulære, logiske og lett å vedlikeholde.",
   },
   {
-   title:"Hva er virtual DOM og hvorfor er det viktig?",
-   body:[
-    "Når du bygger en nettside, jobber du egentlig med DOM-en (Document Object Model) - som er måten HTML-struktue lagres og vises i nettleseren.",
-    "Men den ekte DOM-en er treg å oppdatere, spesielt hvis mange ting endres samtidig.",
-    "React løser dette med Virtual DOM:"
-   ],
-   list:[
-    "En kopi av DOM-en holdes i minnet (det er 'virtual DOM').",
-    "Når noe endres, oppdateres først denne kopien.",
-    "React sammenligner den nye og gamle kopien (diffing).",
-    "Kun de nødvendige delene av ekte DOM blir oppdatert.",
-   ],
-   note:"Applikasjonen blir mye raskere og mer effektiv, fordi React gjør færre og smartere oppdateringer."
+    title: "Hva er virtual DOM og hvorfor er det viktig?",
+    body: [
+      "Når du bygger en nettside, jobber du egentlig med DOM-en (Document Object Model) - som er måten HTML-struktue lagres og vises i nettleseren.",
+      "Men den ekte DOM-en er treg å oppdatere, spesielt hvis mange ting endres samtidig.",
+      "React løser dette med Virtual DOM:",
+    ],
+    list: [
+      "En kopi av DOM-en holdes i minnet (det er 'virtual DOM').",
+      "Når noe endres, oppdateres først denne kopien.",
+      "React sammenligner den nye og gamle kopien (diffing).",
+      "Kun de nødvendige delene av ekte DOM blir oppdatert.",
+    ],
+    note: "Applikasjonen blir mye raskere og mer effektiv, fordi React gjør færre og smartere oppdateringer.",
   },
   {
-    title:"Oppsummering",
-    body:[
+    title: "Oppsummering",
+    body: [
       "React er et moderne og kraftig verktøy som gjør det enklere å lage interaktive nettsteder og apper. Med komponenter kan ddu dele opp koden i små, gjenbrukbare deler. Med hooks som useState og useEffect kan du enkelt håndtere data og logikk inne i komponentene dine.",
       "JSX gjør det lett å skrive lesbar strukturert kode , og Virtual DOM sørger for at appen kjører raskt og effektivt.",
-      "Enten du bygger en enkel nettside eller en stor webapp. React gir deg verktøyene du trenger or å lage moderne og robuste brukeropplevelser."
-    ]
-  }
+      "Enten du bygger en enkel nettside eller en stor webapp. React gir deg verktøyene du trenger or å lage moderne og robuste brukeropplevelser.",
+    ],
+    subSections: [
+      {
+        title: "Klar for en utfordring?",
+        body: [
+          "Etter å ha lest gjennom faginnholdet Design, Javascript og React, kan du teste kunnskapen din med noen av våre flervalgsspørsmål! ",
+        ],
+        button: {
+          text: "Test kunnskapen din",
+          href: "./tasks",
+        },
+      },
+    ],
+  },
 ];
