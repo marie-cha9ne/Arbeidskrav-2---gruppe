@@ -1,6 +1,5 @@
 import { Answer, MultipleChoice, Result } from "../data/types";
 
-//Tar inn oppgavene, svarene til brukeren og fasiten
 export function calculateScore(
   userAnswers: Answer[],
   tasks: MultipleChoice[]
