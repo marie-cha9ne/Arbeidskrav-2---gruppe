@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { IoAccessibility } from "react-icons/io5";
+
 const Main: React.FC = () => {
   return (
     <main className={styles.main}>

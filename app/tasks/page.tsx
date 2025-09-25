@@ -5,6 +5,7 @@ import { Tasks } from "../data/tasks";
 import { useAnswerStore } from "../store/useAnswerStore";
 import TasksHeader from "../components/TasksHeader";
 import TaskCard from "../components/TaskCard";
+import ResetButton from "../components/ResetButton";
 import SubmitButton from "../components/SubmitButton";
 import Results from "../components/Results";
 
@@ -17,6 +18,7 @@ export default function TasksPage() {
       <TasksHeader />
       <TaskCard tasks={Tasks} submitted={submitted} />
       <SubmitButton onSubmit={() => setSubmitted(true)} />
+      <ResetButton />
       {submitted && <Results userAnswers={userAnswers} />}
     </main>
   );

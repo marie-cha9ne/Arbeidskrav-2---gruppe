@@ -1,53 +1,52 @@
-.footer{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    background-color: #ffff ;
-    border: 1px solid #ffff;
-    padding: 1em 0;
+.footer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #ffff;
+  border: 1px solid #ffff;
+  padding: 1em 0;
 }
 
-.footerSection{
-     color:#231942;
-     display: flex;
-     justify-content: space-evenly;
+.footerSection {
+  color: #231942;
+  display: flex;
+  justify-content: space-evenly;
+}
+.fa {
+  display: flex;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
 
-}
-.fa{
-    display: flex;
-    margin: 0 auto;
-    width: 50px;
-    height: 50px;
+.fa:hover {
+  width: 55px;
+  height: 55px;
 }
 
-.fa:hover{
-     width: 55px;
-    height: 55px;
+.react:hover,
+.js:hover,
+.css:hover {
+  color: #be95c4;
 }
-.react:hover{
-    color: #BE95C4;
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  color: #231942;
+  gap: 1em;
+  font-size: 1em;
+  margin-top: 3em;
+  text-decoration: underline;
 }
-.js:hover{
-    color: #BE95C4;
+
+.contact > p:hover {
+  font-size: 1.7rem;
 }
-.css:hover{
-    color: #BE95C4;
-}
-.contact{
-    display: flex;
-    justify-content: space-evenly;
-     color: #231942;
-     gap: 1em;
-     font-size: 1em;
-     margin-top: 3em;
-     text-decoration: underline;
-}
-.contact >p:hover{
-    font-size: 1.7rem;
-}
-.up:hover{
-    padding: 0;
-    margin: 0;
-width: 1.5rem;
-height: 1.8rem;
+
+.up:hover {
+  padding: 0;
+  margin: 0;
+  width: 1.5rem;
+  height: 1.8rem;
 }

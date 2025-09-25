@@ -4,6 +4,7 @@ import { SiJavascript } from "react-icons/si";
 import { FaArrowUp } from "react-icons/fa";
 import { IoAccessibility } from "react-icons/io5";
 import Link from "next/link";
+
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
