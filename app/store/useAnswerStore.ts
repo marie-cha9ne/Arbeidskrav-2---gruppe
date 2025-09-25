@@ -1,4 +1,3 @@
-//Her lagres svarene til brukeren
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { Answer } from "../data/types";
