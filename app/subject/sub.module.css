@@ -1,85 +1,93 @@
-.main{
- width: 100%;
- max-width: 950px;
- margin-inline: auto;
- line-height: 1.2em;
+.main {
+  width: 100%;
+  max-width: 950px;
+  margin-inline: auto;
+  line-height: 1.2em;
 }
 
-.headline{
-  margin: 20px 0;
-  color:#231942;
+.bigHeadline{
   text-align: center;
+  margin: 20px;
+  color: #231942;
+}
+.headline, .subHeadlines {
+  margin: 20px 0px 0px 18px;
+  color: #231942;
 }
 
-.bar{
+.bar {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
   padding: 20px 0;
   width: 100%;
   height: 10vh;
+  background-color: #231942bd;
 }
 
-.links:hover{
-  color: #231942;
+.links {
+  font-weight: bold;
+  color:whitesmoke;
+  padding:10px 20px;
   border-radius: 10px;
-  box-shadow: 1px 1px 7px #BE95C4;
-  padding: 5px 10px;
-  transform: scale(1.2rem);
-  transition: 0.4s ease;
+  font-size: 1.1rem;
+  text-decoration: underline #be95c4;
+}
+.links:hover {
+  box-shadow: 1px 1px 7px #be95c4;
+  color: whitesmoke;
+  text-decoration: none;  
+  transition: 0.5s ease;
 }
 
-.lists{
-  padding:10px 40px;
+.lists {
+  padding: 10px 40px;
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
 }
 
-.codeLine{
+.codeLine {
   margin: 35px;
-  box-shadow: 1px 1px 10px #BE95C4;
+  box-shadow: 1px 1px 10px #be95c4;
   border-radius: 15px;
-  padding:20px 5px;
+  padding: 20px 5px;
   overflow-x: auto;
 }
 
-.subHeadlines{
-  margin:10px 20px;
+.content {
+  padding: 10px 20px;
+  margin: 5px 0;
 }
 
-.content{
-  padding: 20px;
-  margin: 10px 0;
-}
-
-.subImages{
-  width: 250px;
+.subImages {
+  width: 14em;
   margin: 0 100px;
 }
 
-.sectImage{
-  width: 500px;
-  margin: 25px 200px;
+.sectImage {
+  width: 35em;
+  margin: 20px 150px;
 }
 
-.btnBox{
+.btnBox {
   display: flex;
   justify-content: center;
 }
 
-.btn{
-  background-color: #231942;
-  border: none;
-  color: whitesmoke;
-  border-radius: 10px;
-  padding:7px 15px;
-  box-shadow: 1px 1px 15px #BE95C4;
-  cursor: pointer;
+.btn {
+  margin-bottom: 5rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #f5f0f9;
+  background-color: #6a1f9f;
+  border-radius: 20px;
+  border: 2px solid #f5f0f9;
 }
-.btn:hover{
-  background-color: #BE95C4;
-  color:black;
-  box-shadow: 1px 1px 15px #231942;
-  transition: 0.4s ease;
-  font-weight: bold;
+.btn:hover {
+  cursor: pointer;
+  color: #6a1f9f;
+  background-color: #f5f0f9;
+  border: 2px solid #6a1f9f;
 }
