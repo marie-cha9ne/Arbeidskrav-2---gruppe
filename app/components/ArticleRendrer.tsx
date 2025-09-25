@@ -19,12 +19,10 @@ export default function ArticleRenderer({ content }: Props) {
               {p}
             </p>
           ))}
-          {/* ^^ Hvis seksjonen har en body(Vanlig tekst avsnitt) looper vi gjennom hver tekst og rendrer det i en p-tag. */}
 
           {section.code && (
             <Example code={section.code} className={styles.codeLine} />
           )}
-          {/* ^^ Hvis det finnes code i seksjonen, så vises det i Example komponentet. */}
 
           {section.list && (
             <ul className={styles.lists}>
@@ -33,7 +31,6 @@ export default function ArticleRenderer({ content }: Props) {
               ))}
             </ul>
           )}
-          {/* ^^ Viser liste med forklaringer */}
 
           {section.images?.map((imgSrc, i) => (
             <img
@@ -43,15 +40,14 @@ export default function ArticleRenderer({ content }: Props) {
               className={styles.sectImage}
             />
           ))}
-          {/* ^^Viser bilder dersom det finnes i seksjonen. */}
 
           {section.note && <p className={styles.content}>{section.note}</p>}
-          {/* ^^Viser ekstra forklarings tekst dersom det finnes. */}
+       
 
           {section.noteCode && (
             <Example code={section.noteCode} className={styles.codeLine} />
           )}
-          {/* ^^Viser et lite ekstra kode eksempel */}
+          
           {section.moreText && (
             <p className={styles.content}>{section.moreText}</p>
           )}
@@ -107,7 +103,6 @@ export default function ArticleRenderer({ content }: Props) {
                 </div>
               )}
             </div>
-            // Her vises subseksjoner (om det finnes) som egene blokker inni hovedseksjonen.
           ))}
         </section>
       ))}
