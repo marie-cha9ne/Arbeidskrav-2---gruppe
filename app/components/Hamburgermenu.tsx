@@ -5,19 +5,19 @@ import Link from "next/link";
 
 const Hamburgermenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  // hamburger menye endrer farge ved scrolling.
+  // Hamburger meny endrer farge ved scrolling.
   const [scrolled, setScroll] = useState<boolean>(false);
 
   useEffect(() => {
     function handelScroll() {
       setScroll(window.scrollY > 50); // endrer farger etter den har scrollet 50px
     }
-    // Siden scroll er en global hendelse, så må man bruke window.addeventlistener. slik at det gjeler for hele sjermen og ikke bare DIV der hanburger er.
+    // Siden scroll er en global hendelse, så må man bruke window.addeventlistener. slik at det gjelder for hele skjermen og ikke bare DIV der hamburger er.
     //
     window.addEventListener("scroll", handelScroll);
     return () => window.removeEventListener("scroll", handelScroll);
-  }, []); // useEffect brukes her oppdaterer seg når det skjer en endring, ved å scrolle så vil den lytte tilscrolling å oppdaterer hendelsen(effecten)
-  //Uten useEffect hadde handelScroll blitt rendert heletiden. å det hadde kommet bugs.
+  }, []); // useEffect brukes for å oppdatere seg når det skjer en endring, ved å scrolle vil den lytte til scrolling og oppdaterer hendelsen(effecten)
+  //Uten useEffect hadde handelScroll blitt rendert hele tiden, som ville ført til bugs.
 
   function toggleMenu(): void {
     setIsOpen((prev) => !prev);

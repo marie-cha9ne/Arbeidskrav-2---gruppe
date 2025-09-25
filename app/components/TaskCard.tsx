@@ -1,5 +1,5 @@
 "use client";
-import "./TaskCard.css";
+import styles from "./TaskCard.module.css";
 import Image from "next/image";
 import { type TaskCardProps } from "../data/types";
 import { useAnswerStore } from "../store/useAnswerStore";
@@ -8,7 +8,6 @@ import { useEffect } from "react";
 export default function TaskCard({ tasks, submitted }: TaskCardProps) {
   const { answers, setAnswer } = useAnswerStore();
 
-  //Logger de lagrede svarene fra Zustand-store
   useEffect(() => {
     console.log("Lagrede svar:", answers);
   }, [answers]);
@@ -25,15 +24,22 @@ export default function TaskCard({ tasks, submitted }: TaskCardProps) {
           selected === task.options[task.correctIndex];
 
         return (
-          <div key={task.id} className="radioButtonDiv">
+          <div key={task.id} className={styles.radioButtonDiv}>
             <h2>
               {task.id}: {task.question}
             </h2>
 
-            {task.image && <Image src={task.image} alt="Eksempelkode" width={task.imageWidth} height={task.imageHeight}></Image>}
+            {task.image && (
+              <Image
+                src={task.image}
+                alt="Eksempelkode"
+                width={task.imageWidth}
+                height={task.imageHeight}
+              ></Image>
+            )}
 
             {task.options.map((optionText, optionIndex) => (
-              <label key={optionIndex}>
+              <label key={optionIndex} className={styles.taskLabel}>
                 <input
                   type="radio"
                   name={task.id.toString()}

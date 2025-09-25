@@ -3,8 +3,6 @@ import Hamburgermenu from "./Hamburgermenu";
 import styles from  './Header.module.css'
 import Link from "next/link";
 
-
-
 const Header: React.FC = ()=> {
   
   return (
