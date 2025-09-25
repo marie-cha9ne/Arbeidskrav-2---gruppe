@@ -1,4 +1,3 @@
-//Rendrer cards for hvert spørsmål med multiple choice format.
 "use client";
 import "./TaskCard.css";
 import Image from "next/image";
